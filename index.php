@@ -110,13 +110,13 @@
       ?>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100 text-left">
-          <a href="sexdates-<?php echo $provbe; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
+          <a href="sexdate-<?php echo $provbe; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
           <div class="card-body">
-            <a href="sexdates-<?php echo $provbe; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
+            <a href="sexdate-<?php echo $provbe; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
             <hr>
             <p class="card-text"><?php echo $item['info']; ?></p>
           </div>
-          <a href="sexdates-<?php echo $provbe; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
+          <a href="sexdate-<?php echo $provbe; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
         </div>
       </div>
       <?php

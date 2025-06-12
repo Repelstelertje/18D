@@ -15,17 +15,17 @@ $navItems = array(
 	array('slug' 	=> 'sexdate-zuid-holland','title' => 'Zuid-Holland'),
 );
 $navItems2 = array(
-	array('slug' 	=> 'sexdates-antwerpen','title' => 'Antwerpen'	),	
-	array('slug' 	=> 'sexdates-brussel','title' 	=> 'Brussel'	),	
-	array('slug' 	=> 'sexdates-henegouwen','title'=> 'Henegouwen'	),	
-	array('slug' 	=> 'sexdates-limburg','title' 	=> 'Limburg'	),	
-	array('slug' 	=> 'sexdates-luik','title' 	=> 'Luik'	),	
-	array('slug' 	=> 'sexdates-luxemburg','title'	=> 'Luxemburg'	),	
-	array('slug' 	=> 'sexdates-namen','title' 	=> 'Namen'	),
-	array('slug' 	=> 'sexdates-oost-vlaanderen','title' => 'Oost-Vlaanderen'),	
-	array('slug' 	=> 'sexdates-vlaams-brabant','title' => 'Vlaams-Brabant'),	
-	array('slug' 	=> 'sexdates-waals-brabant','title' => 'Waals-Brabant'	),	
-	array('slug' 	=> 'sexdates-west-vlaanderen','title' => 'West-Vlaanderen'),
+	array('slug' 	=> 'sexdate-antwerpen','title' => 'Antwerpen'	),	
+	array('slug' 	=> 'sexdate-brussel','title' 	=> 'Brussel'	),	
+	array('slug' 	=> 'sexdate-henegouwen','title'=> 'Henegouwen'	),	
+	array('slug' 	=> 'sexdate-limburg','title' 	=> 'Limburg'	),	
+	array('slug' 	=> 'sexdate-luik','title' 	=> 'Luik'	),	
+	array('slug' 	=> 'sexdate-luxemburg','title'	=> 'Luxemburg'	),	
+	array('slug' 	=> 'sexdate-namen','title' 	=> 'Namen'	),
+	array('slug' 	=> 'sexdate-oost-vlaanderen','title' => 'Oost-Vlaanderen'),	
+	array('slug' 	=> 'sexdate-vlaams-brabant','title' => 'Vlaams-Brabant'),	
+	array('slug' 	=> 'sexdate-waals-brabant','title' => 'Waals-Brabant'	),	
+	array('slug' 	=> 'sexdate-west-vlaanderen','title' => 'West-Vlaanderen'),
 );
 $navItemsUK = array(       
 	array('slug' => 'sexdate-east-midlands','title' => 'East Midlands'),        
