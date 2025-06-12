@@ -154,7 +154,12 @@ hr {
 }
 
 .portfolio-item {
-	margin: 10px 0px;
+        margin: 10px 0px;
+}
+
+/* Center all pagination elements */
+.pagination {
+    justify-content: center;
 }
 
 .page-item.active .page-link {
