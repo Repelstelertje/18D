@@ -1,6 +1,7 @@
 <?php
 	define("TITLE", "Daten");
-	include('includes/header.php');
+        include('includes/header.php');
+        include('config.php');
 ?>
 <!-- Page Content -->
     <div class="container" id="profiel">
@@ -36,15 +37,15 @@
   $country = isset($_GET['country']) ? $_GET['country'] : '';
   switch ($country) {
     case 'nl':
-      $api_url = 'https://16hl07csd16.nl/profile/get0/6/';
+      $api_url = api_base('nl') . '/profile/get0/6/';
       $ref_id = '32';
       break;
     case 'be':
-      $api_url = 'https://20fhbe2020.be/profile/get0/7/';
+      $api_url = api_base('be') . '/profile/get0/7/';
       $ref_id = '32';
       break;
     default:
-      $api_url = 'https://16hl07csd16.nl/profile/get/';
+      $api_url = api_base() . '/profile/get/';
       $ref_id = '32';
   }
 ?>
