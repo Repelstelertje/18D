@@ -46,38 +46,37 @@
       </div>
       <script>
         var api_url= "<?= api_base('be'); ?>/profile/province_age/be/<?=$provbe['name']?>/18/45/120/S";
-      </script>
-
-      <!-- Pagination -->
-      <nav class="nav-pag" aria-label="Page navigation">
-        <ul class="pagination flex-wrap justify-content-center">
-          <li class="page-item">
-            <a class="page-link" aria-label="Vorige"
-               v-on:click="set_page_number(page-1)"
-               >
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Vorige</span>
-            </a>
-          </li>
-            
-          <li v-for="page_number in max_page_number"
-              class="page-item"
-              v-bind:class="{ active: page_number == page }"
-              >
-            <a class="page-link" v-on:click="set_page_number(page_number)">{{ page_number }}</a>
-          </li>
-            
-          <li class="page-item">
-            <a class="page-link" aria-label="Volgende"
-                v-on:click="set_page_number(page+1)"
-               >
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Volgende</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      </script> 
     </div><!-- /.row -->
+    <!-- Pagination -->
+    <nav class="nav-pag" aria-label="Page navigation">
+      <ul class="pagination flex-wrap justify-content-center">
+        <li class="page-item">
+          <a class="page-link" aria-label="Vorige"
+             v-on:click="set_page_number(page-1)"
+             >
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Vorige</span>
+          </a>
+        </li>
+          
+        <li v-for="page_number in max_page_number"
+            class="page-item"
+            v-bind:class="{ active: page_number == page }"
+            >
+          <a class="page-link" v-on:click="set_page_number(page_number)">{{ page_number }}</a>
+        </li>
+          
+        <li class="page-item">
+          <a class="page-link" aria-label="Volgende"
+              v-on:click="set_page_number(page+1)"
+             >
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Volgende</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="container">
       <div id="footer-banner"></div>
       <div class="jumbotron">
