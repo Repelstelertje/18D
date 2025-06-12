@@ -3,9 +3,18 @@
   $companyName = "18Date.net";
   include('includes/nav_items.php');
 
-  ini_set('display_errors', 1);
-  ini_set('display_startup_errors', 1);
-  error_reporting(E_ALL);
+  // Control error visibility through an environment variable. By default
+  // errors are hidden in production unless APP_DEBUG is truthy.
+  $appDebug = getenv('APP_DEBUG');
+
+  if (filter_var($appDebug, FILTER_VALIDATE_BOOLEAN)) {
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
+  } else {
+    ini_set('display_errors', '0');
+    ini_set('display_startup_errors', '0');
+  }
 
 ?>
 
