@@ -2,8 +2,12 @@
 	define("TITLE", "Home");
     include('includes/arr_prov_nl.php');
     include('includes/arr_prov_be.php');
+    include('includes/arr_prov_uk.php');
+    include('includes/arr_prov_de.php');
+    include('includes/arr_prov_at.php');
+    include('includes/arr_prov_ch.php');
     include('includes/array_tips.php');
-  	include('includes/header.php');
+        include('includes/header.php');
 ?>
 
 	<div class="container">
@@ -32,7 +36,47 @@
           ?>
         </div>
       </div>
-  		<p><a href="index">18date.net</a> is de contactadvertentie website om <b>snel en gratis</b> in contact te komen met jonge <b>vrouwen bij jou in de buurt</b>. Hier kun je jezelf <b>anoniem en gratis inschrijven</b> met een zelfgekozen profielnaam. Ook blijft je e-mailadres altijd geheim voor andere leden. Voor wie echt helemaal anoniem wil blijven, bestaat de mogelijkheid om geen foto op het profiel te tonen.</p>
+      <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UK</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+          <?php
+            foreach ($navItemsUK as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+          ?>
+        </div>
+      </div>
+      <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Duitsland</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+          <?php
+            foreach ($navItemsDE as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+          ?>
+        </div>
+      </div>
+      <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oostenrijk</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+          <?php
+            foreach ($navItemsAT as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+          ?>
+        </div>
+      </div>
+      <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zwitserland</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+          <?php
+            foreach ($navItemsCH as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+          ?>
+        </div>
+      </div>
+                <p><a href="index">18date.net</a> is de contactadvertentie website om <b>snel en gratis</b> in contact te komen met jonge <b>vrouwen bij jou in de buurt</b>. Hier kun je jezelf <b>anoniem en gratis inschrijven</b> met een zelfgekozen profielnaam. Ook blijft je e-mailadres altijd geheim voor andere leden. Voor wie echt helemaal anoniem wil blijven, bestaat de mogelijkheid om geen foto op het profiel te tonen.</p>
       <p>Of je nou bewust op zoek bent naar een eenmalige sexdate of geregeld wil afspreken met dames voor een meerdere sexdates? Op <a href="index">18date.net</a> vind je <b>meer dan 10.000 single vrouwen die openstaan voor een sexdate</b>. Duizenden singles zijn op dit moment op zoek naar een sexdate, een sexpartner of meerdere sexdates. Van zoeken naar een sexdate binnen enkele dagen, gelijk sex bij jou in de buurt tot meerdere sexdates in een week. Bij <a href="index">18date.net</a> heb jij het snelst een sexdate in de BeNeLux! Kies in welk land jij wil zoeken naar een sexdate.</p>
 		</div>
     
@@ -78,6 +122,70 @@
       <?php
         }
       ?>
+    </div>
+    <h2 class="jumbotron text-center" id="uk">United Kingdom</h2>
+    <div class="row text-center" id="keuze">
+      <?php foreach ($uk as $provuk => $item) { ?>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 text-left">
+          <a href="sexdate-<?php echo $provuk; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <div class="card-body">
+            <a href="sexdate-<?php echo $provuk; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
+            <hr>
+            <p class="card-text"><?php echo $item['info']; ?></p>
+          </div>
+          <a href="sexdate-<?php echo $provuk; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
+        </div>
+      </div>
+      <?php } ?>
+    </div>
+    <h2 class="jumbotron text-center" id="duitsland">Duitsland</h2>
+    <div class="row text-center" id="keuze">
+      <?php foreach ($de as $provde => $item) { ?>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 text-left">
+          <a href="sexdate-<?php echo $provde; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <div class="card-body">
+            <a href="sexdate-<?php echo $provde; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
+            <hr>
+            <p class="card-text"><?php echo $item['info']; ?></p>
+          </div>
+          <a href="sexdate-<?php echo $provde; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
+        </div>
+      </div>
+      <?php } ?>
+    </div>
+    <h2 class="jumbotron text-center" id="oostenrijk">Oostenrijk</h2>
+    <div class="row text-center" id="keuze">
+      <?php foreach ($at as $provat => $item) { ?>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 text-left">
+          <a href="sexdate-<?php echo $provat; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <div class="card-body">
+            <a href="sexdate-<?php echo $provat; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
+            <hr>
+            <p class="card-text"><?php echo $item['info']; ?></p>
+          </div>
+          <a href="sexdate-<?php echo $provat; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
+        </div>
+      </div>
+      <?php } ?>
+    </div>
+    <h2 class="jumbotron text-center" id="zwitserland">Zwitserland</h2>
+    <div class="row text-center" id="keuze">
+      <?php foreach ($ch as $provch => $item) { ?>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 text-left">
+          <a href="sexdate-<?php echo $provch; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <div class="card-body">
+            <a href="sexdate-<?php echo $provch; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
+            <hr>
+            <p class="card-text"><?php echo $item['info']; ?></p>
+          </div>
+          <a href="sexdate-<?php echo $provch; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
+        </div>
+      </div>
+      <?php } ?>
     </div>
     <div id="footer-banner"></div>
     <div class="jumbotron text-center">
