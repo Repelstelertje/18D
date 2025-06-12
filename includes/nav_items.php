@@ -1,177 +1,99 @@
 <?php
-	// Nav Menu Items
-	$navItems = array(
-
-					array(
-						'slug' 	=> 'sexdate-drenthe',
-						'title' 	=> 'Drenthe'
-					),
-					array(
-						'slug' 	=> 'sexdate-flevoland',
-						'title' 	=> 'Flevoland'
-					),
-					array(
-						'slug' 	=> 'sexdate-friesland',
-						'title' 	=> 'Friesland'
-					),
-					array(
-						'slug' 	=> 'sexdate-gelderland',
-						'title' 	=> 'Gelderland'
-					),
-					array(
-						'slug' 	=> 'sexdate-groningen',
-						'title' 	=> 'Groningen'
-					),
-					array(
-						'slug' 	=> 'sexdate-limburg',
-						'title' 	=> 'Limburg'
-					),
-					array(
-						'slug' 	=> 'sexdate-noord-brabant',
-						'title' 	=> 'Noord-Brabant'
-					),
-					array(
-						'slug' 	=> 'sexdate-noord-holland',
-						'title' 	=> 'Noord-Holland'
-					),
-					array(
-						'slug' 	=> 'sexdate-overijssel',
-						'title' 	=> 'Overijssel'
-					),
-					array(
-						'slug' 	=> 'sexdate-utrecht',
-						'title' 	=> 'Utrecht'
-					),
-					array(
-						'slug' 	=> 'sexdate-zeeland',
-						'title' 	=> 'Zeeland'
-					),
-					array(
-						'slug' 	=> 'sexdate-zuid-holland',
-						'title' 	=> 'Zuid-Holland'
-					),
-				);
-
-	$navItems2 = array(
-
-					array(
-						'slug' 	=> 'sexdates-antwerpen',
-						'title' 	=> 'Antwerpen'
-					),
-					array(
-						'slug' 	=> 'sexdates-brussel',
-						'title' 	=> 'Brussel'
-					),
-					array(
-						'slug' 	=> 'sexdates-henegouwen',
-						'title' 	=> 'Henegouwen'
-					),
-					array(
-						'slug' 	=> 'sexdates-limburg',
-						'title' 	=> 'Limburg'
-					),
-					array(
-						'slug' 	=> 'sexdates-luik',
-						'title' 	=> 'Luik'
-					),
-					array(
-						'slug' 	=> 'sexdates-luxemburg',
-						'title' 	=> 'Luxemburg'
-					),
-					array(
-						'slug' 	=> 'sexdates-namen',
-						'title' 	=> 'Namen'
-					),
-					array(
-						'slug' 	=> 'sexdates-oost-vlaanderen',
-						'title' 	=> 'Oost-Vlaanderen'
-					),
-					array(
-						'slug' 	=> 'sexdates-vlaams-brabant',
-						'title' 	=> 'Vlaams-Brabant'
-					),
-					array(
-						'slug' 	=> 'sexdates-waals-brabant',
-						'title' 	=> 'Waals-Brabant'
-					),
-					array(
-						'slug' 	=> 'sexdates-west-vlaanderen',
-						'title' 	=> 'West-Vlaanderen'
-					),
-                                );
-
-$navItemsUK = array(
-        array('slug' => 'sexdate-east-midlands','title' => 'East Midlands'),
-        array('slug' => 'sexdate-east-of-england','title' => 'East of England'),
-        array('slug' => 'sexdate-london','title' => 'London'),
-        array('slug' => 'sexdate-north-east-england','title' => 'North East England'),
-        array('slug' => 'sexdate-north-west-england','title' => 'North West England'),
-        array('slug' => 'sexdate-northern-ireland','title' => 'Northern Ireland'),
-        array('slug' => 'sexdate-scotland','title' => 'Scotland'),
-        array('slug' => 'sexdate-south-east-england','title' => 'South East England'),
-        array('slug' => 'sexdate-south-west-england','title' => 'South West England'),
-        array('slug' => 'sexdate-wales','title' => 'Wales'),
-        array('slug' => 'sexdate-west-midlands','title' => 'West Midlands'),
-        array('slug' => 'sexdate-yorkshire-and-the-humber','title' => 'Yorkshire and The Humber'),
+// Nav Menu Items
+$navItems = array(	
+	array('slug' 	=> 'sexdate-drenthe','title' 	=> 'Drenthe'),	
+	array('slug' 	=> 'sexdate-flevoland','title' 	=> 'Flevoland'),	
+	array('slug' 	=> 'sexdate-friesland','title' 	=> 'Friesland'),	
+	array('slug' 	=> 'sexdate-gelderland','title' => 'Gelderland'),	
+	array('slug' 	=> 'sexdate-groningen','title' 	=> 'Groningen'),	
+	array('slug' 	=> 'sexdate-limburg','title' 	=> 'Limburg'	),	
+	array('slug' 	=> 'sexdate-noord-brabant','title' => 'Noord-Brabant'	),	
+	array('slug' 	=> 'sexdate-noord-holland','title' => 'Noord-Holland'	),	
+	array('slug' 	=> 'sexdate-overijssel','title' => 'Overijssel'	),	
+	array('slug' 	=> 'sexdate-utrecht','title' 	=> 'Utrecht'	),	
+	array('slug' 	=> 'sexdate-zeeland','title' 	=> 'Zeeland'	),	
+	array('slug' 	=> 'sexdate-zuid-holland','title' => 'Zuid-Holland'),
 );
-
-$navItemsDE = array(
-        array('slug' => 'sexdate-baden-wurttemberg','title' => 'Baden-Wurttemberg'),
-        array('slug' => 'sexdate-bayern','title' => 'Bayern'),
-        array('slug' => 'sexdate-berlin','title' => 'Berlin'),
-        array('slug' => 'sexdate-brandenburg','title' => 'Brandenburg'),
-        array('slug' => 'sexdate-bremen','title' => 'Bremen'),
-        array('slug' => 'sexdate-hamburg','title' => 'Hamburg'),
-        array('slug' => 'sexdate-hessen','title' => 'Hessen'),
-        array('slug' => 'sexdate-mecklenburg-vorpommern','title' => 'Mecklenburg-Vorpommern'),
-        array('slug' => 'sexdate-niedersachsen','title' => 'Niedersachsen'),
-        array('slug' => 'sexdate-nordrhein-westfalen','title' => 'Nordrhein-Westfalen'),
-        array('slug' => 'sexdate-rheinland-pfalz','title' => 'Rheinland-Pfalz'),
-        array('slug' => 'sexdate-saarland','title' => 'Saarland'),
-        array('slug' => 'sexdate-sachsen','title' => 'Sachsen'),
-        array('slug' => 'sexdate-sachsen-anhalt','title' => 'Sachsen-Anhalt'),
-        array('slug' => 'sexdate-schleswig-holstein','title' => 'Schleswig-Holstein'),
-        array('slug' => 'sexdate-thuringen','title' => 'Thuringen'),
+$navItems2 = array(
+	array('slug' 	=> 'sexdates-antwerpen','title' => 'Antwerpen'	),	
+	array('slug' 	=> 'sexdates-brussel','title' 	=> 'Brussel'	),	
+	array('slug' 	=> 'sexdates-henegouwen','title'=> 'Henegouwen'	),	
+	array('slug' 	=> 'sexdates-limburg','title' 	=> 'Limburg'	),	
+	array('slug' 	=> 'sexdates-luik','title' 	=> 'Luik'	),	
+	array('slug' 	=> 'sexdates-luxemburg','title'	=> 'Luxemburg'	),	
+	array('slug' 	=> 'sexdates-namen','title' 	=> 'Namen'	),
+	array('slug' 	=> 'sexdates-oost-vlaanderen','title' => 'Oost-Vlaanderen'	),	
+	srray('slug' 	=> 'sexdates-vlaams-brabant','title' => 'Vlaams-Brabant'	),	
+	array('slug' 	=> 'sexdates-waals-brabant','title' => 'Waals-Brabant'	),	
+	array('slug' 	=> 'sexdates-west-vlaanderen','title' => 'West-Vlaanderen'	),
 );
-
-$navItemsAT = array(
-        array('slug' => 'sexdate-burgenland','title' => 'Burgenland'),
-        array('slug' => 'sexdate-karnten','title' => 'Kärnten'),
-        array('slug' => 'sexdate-niederosterreich','title' => 'Niederösterreich'),
-        array('slug' => 'sexdate-oberosterreich','title' => 'Oberösterreich'),
-        array('slug' => 'sexdate-salzburg','title' => 'Salzburg'),
-        array('slug' => 'sexdate-steiermark','title' => 'Steiermark'),
-        array('slug' => 'sexdate-tirol','title' => 'Tirol'),
-        array('slug' => 'sexdate-vorarlberg','title' => 'Vorarlberg'),
-        array('slug' => 'sexdate-wien','title' => 'Wien'),
+$navItemsUK = array(       
+	array('slug' => 'sexdate-east-midlands','title' => 'East Midlands'),        
+	array('slug' => 'sexdate-east-of-england','title' => 'East of England'),        
+	array('slug' => 'sexdate-london','title' => 'London'),        
+	array('slug' => 'sexdate-north-east-england','title' => 'North East England'),        
+	array('slug' => 'sexdate-north-west-england','title' => 'North West England'),        
+	array('slug' => 'sexdate-northern-ireland','title' => 'Northern Ireland'),        
+	array('slug' => 'sexdate-scotland','title' => 'Scotland'),        
+	array('slug' => 'sexdate-south-east-england','title' => 'South East England'),        
+	array('slug' => 'sexdate-south-west-england','title' => 'South West England'),        
+	array('slug' => 'sexdate-wales','title' => 'Wales'),        
+	array('slug' => 'sexdate-west-midlands','title' => 'West Midlands'),        
+	array('slug' => 'sexdate-yorkshire-and-the-humber','title' => 'Yorkshire and The Humber'),
 );
-
-$navItemsCH = array(
-        array('slug' => 'sexdate-aargau','title' => 'Aargau'),
-        array('slug' => 'sexdate-appenzell','title' => 'Appenzell'),
-        array('slug' => 'sexdate-basel-land','title' => 'Basel-Land'),
-        array('slug' => 'sexdate-basel-stadt','title' => 'Basel-Stadt'),
-        array('slug' => 'sexdate-bern','title' => 'Bern'),
-        array('slug' => 'sexdate-fribourg','title' => 'Fribourg'),
-        array('slug' => 'sexdate-geneve','title' => 'Genève'),
-        array('slug' => 'sexdate-glarus','title' => 'Glarus'),
-        array('slug' => 'sexdate-graubunden','title' => 'Graubünden'),
-        array('slug' => 'sexdate-jura','title' => 'Jura'),
-        array('slug' => 'sexdate-luzern','title' => 'Luzern'),
-        array('slug' => 'sexdate-neuchatel','title' => 'Neuchâtel'),
-        array('slug' => 'sexdate-nidwalden','title' => 'Nidwalden'),
-        array('slug' => 'sexdate-obwalden','title' => 'Obwalden'),
-        array('slug' => 'sexdate-schaffhausen','title' => 'Schaffhausen'),
-        array('slug' => 'sexdate-schwyz','title' => 'Schwyz'),
-        array('slug' => 'sexdate-solothurn','title' => 'Solothurn'),
-        array('slug' => 'sexdate-st-gallen','title' => 'St. Gallen'),
-        array('slug' => 'sexdate-thurgau','title' => 'Thurgau'),
-        array('slug' => 'sexdate-ticino','title' => 'Ticino'),
-        array('slug' => 'sexdate-uri','title' => 'Uri'),
-        array('slug' => 'sexdate-valais','title' => 'Valais'),
-        array('slug' => 'sexdate-vaud','title' => 'Vaud'),
-        array('slug' => 'sexdate-zug','title' => 'Zug'),
-        array('slug' => 'sexdate-zurich','title' => 'Zürich'),
+$navItemsDE = array(        
+	array('slug' => 'sexdate-baden-wurttemberg','title' => 'Baden-Wurttemberg'),        
+	array('slug' => 'sexdate-bayern','title' => 'Bayern'),        
+	array('slug' => 'sexdate-berlin','title' => 'Berlin'),        
+	array('slug' => 'sexdate-brandenburg','title' => 'Brandenburg'),        
+	array('slug' => 'sexdate-bremen','title' => 'Bremen'),        
+	array('slug' => 'sexdate-hamburg','title' => 'Hamburg'),        
+	array('slug' => 'sexdate-hessen','title' => 'Hessen'),        
+	array('slug' => 'sexdate-mecklenburg-vorpommern','title' => 'Mecklenburg-Vorpommern'),        
+	array('slug' => 'sexdate-niedersachsen','title' => 'Niedersachsen'),        
+	array('slug' => 'sexdate-nordrhein-westfalen','title' => 'Nordrhein-Westfalen'),        
+	array('slug' => 'sexdate-rheinland-pfalz','title' => 'Rheinland-Pfalz'),        
+	array('slug' => 'sexdate-saarland','title' => 'Saarland'),        
+	array('slug' => 'sexdate-sachsen','title' => 'Sachsen'),        
+	array('slug' => 'sexdate-sachsen-anhalt','title' => 'Sachsen-Anhalt'),        
+	array('slug' => 'sexdate-schleswig-holstein','title' => 'Schleswig-Holstein'),        
+	array('slug' => 'sexdate-thuringen','title' => 'Thuringen'),
 );
-
-?>
+$navItemsAT = array(       
+	array('slug' => 'sexdate-burgenland','title' => 'Burgenland'),        
+	array('slug' => 'sexdate-karnten','title' => 'Kärnten'),        
+	array('slug' => 'sexdate-niederosterreich','title' => 'Niederösterreich'),        
+	array('slug' => 'sexdate-oberosterreich','title' => 'Oberösterreich'),        
+	array('slug' => 'sexdate-salzburg','title' => 'Salzburg'),        
+	array('slug' => 'sexdate-steiermark','title' => 'Steiermark'),        
+	array('slug' => 'sexdate-tirol','title' => 'Tirol'),        
+	array('slug' => 'sexdate-vorarlberg','title' => 'Vorarlberg'),        
+	array('slug' => 'sexdate-wien','title' => 'Wien'),
+);
+$navItemsCH = array(        
+	array('slug' => 'sexdate-aargau','title' => 'Aargau'),        
+	array('slug' => 'sexdate-appenzell','title' => 'Appenzell'),        
+	array('slug' => 'sexdate-basel-land','title' => 'Basel-Land'),        
+	array('slug' => 'sexdate-basel-stadt','title' => 'Basel-Stadt'),        
+	array('slug' => 'sexdate-bern','title' => 'Bern'),        
+	array('slug' => 'sexdate-fribourg','title' => 'Fribourg'),        
+	array('slug' => 'sexdate-geneve','title' => 'Genève'),        
+	array('slug' => 'sexdate-glarus','title' => 'Glarus'),        
+	array('slug' => 'sexdate-graubunden','title' => 'Graubünden'),        
+	array('slug' => 'sexdate-jura','title' => 'Jura'),        
+	array('slug' => 'sexdate-luzern','title' => 'Luzern'),        
+	array('slug' => 'sexdate-neuchatel','title' => 'Neuchâtel'),        
+	array('slug' => 'sexdate-nidwalden','title' => 'Nidwalden'),        
+	array('slug' => 'sexdate-obwalden','title' => 'Obwalden'),        
+	array('slug' => 'sexdate-schaffhausen','title' => 'Schaffhausen'),        
+	array('slug' => 'sexdate-schwyz','title' => 'Schwyz'),        
+	array('slug' => 'sexdate-solothurn','title' => 'Solothurn'),        
+	array('slug' => 'sexdate-st-gallen','title' => 'St. Gallen'),        
+	array('slug' => 'sexdate-thurgau','title' => 'Thurgau'),        
+	array('slug' => 'sexdate-ticino','title' => 'Ticino'),       
+	array('slug' => 'sexdate-uri','title' => 'Uri'),        
+	array('slug' => 'sexdate-valais','title' => 'Valais'),        
+	array('slug' => 'sexdate-vaud','title' => 'Vaud'),        
+	array('slug' => 'sexdate-zug','title' => 'Zug'),        
+	array('slug' => 'sexdate-zurich','title' => 'Zürich'),
+);?>
