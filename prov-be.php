@@ -43,7 +43,7 @@
             <a :href="'profile-be.php?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a></div>
         </div>
       </div>
-      <script nonce="2726c7f26c">
+      <script>
         var api_url= "https://20fhbe2020.be/profile/province_age/be/<?=$provbe['name']?>/18/45/120/S";
       </script>
 

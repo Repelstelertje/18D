@@ -18,7 +18,7 @@
 <script src="https://16hl07csd16.nl/cdn/oproepjes/js/axios.0.17.1.min.js"></script>
 <script src="https://16hl07csd16.nl/cdn/oproepjes/jquery/jquery.min.js"></script>
 <script src="https://16hl07csd16.nl/cdn/oproepjes/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript"   nonce="2726c7f26c" SameSite=None; Secure>
+<script type="text/javascript">
 	////Random IMG
 	var topper = ['1.gif', '2.gif', '3.gif', '4.gif', '5.gif', '6.gif', '7.gif', '8.gif', '9.gif', '10.gif'];
 	$('<a href="https://testars-consin.icu/543064f4-6080-4845-8f43-30f049426cdf?site={18D}"><img class="align-center" src="img/banners/' + topper[Math.floor(Math.random() * topper.length)] + '" alt="Spannende plekken om contact te maken"></a>').appendTo('#top-banner');
