@@ -30,7 +30,7 @@
     <div id="footer-banner"></div>
 </div><!-- Container -->
 
-<script nonce="2726c7f26c">    
+<script>
     var api_url= "https://20fhbe2020.be/profile/get0/7/";
     var ref_id= "32"; //de ref_id vd landingwebsite
 </script>

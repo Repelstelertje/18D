@@ -38,7 +38,7 @@
             </div>
             <a :href="'profile.php?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a></div>
         </div>
-        <script nonce="2726c7f26c">
+        <script>
             var api_url= "https://16hl07csd16.nl/profile/province_age/de/<?=$provde['name']?>/18/45/120/S";
         </script>
 
