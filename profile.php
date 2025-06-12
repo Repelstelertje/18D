@@ -44,6 +44,16 @@
       $api_url = api_base('be') . '/profile/get0/7/';
       $ref_id = '32';
       break;
+    case 'de':
+    case 'at':
+    case 'ch':
+      $api_url = api_base('de') . '/profile/get/';
+      $ref_id = '32';
+      break;
+    case 'uk':
+      $api_url = api_base('uk') . '/profile/get/';
+      $ref_id = '32';
+      break;
     default:
       $api_url = api_base() . '/profile/get/';
       $ref_id = '32';
