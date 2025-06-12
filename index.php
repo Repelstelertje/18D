@@ -85,19 +85,20 @@
     <h2 class="jumbotron text-center" id="nederland">Nederland</h2>
 		<div class="row text-center" id="keuze">
 			<?php 
-				foreach ($nl as $provnl => $item) {
-			?>
-			<div class="col-lg-3 col-md-6 mb-4">
-	      <div class="card h-100 text-left">
-                <a href="sexdate-<?php echo $provnl; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
-	        <div class="card-body">
-	          <a href="sexdate-<?php echo $provnl; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
-	          <hr>
-	          <p class="card-text"><?php echo $item['info']; ?></p>
-	        </div>
-	        <a href="sexdate-<?php echo $provnl; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
-	      </div>
-	    </div>
+                                foreach ($nl as $provnl => $item) {
+                                    $slug = ($provnl === 'limburg') ? 'sexdate-limburg-nl' : 'sexdate-' . $provnl;
+                        ?>
+                        <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100 text-left">
+                <a href="<?php echo $slug; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
+                <div class="card-body">
+                  <a href="<?php echo $slug; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
+                  <hr>
+                  <p class="card-text"><?php echo $item['info']; ?></p>
+                </div>
+                <a href="<?php echo $slug; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
+              </div>
+            </div>
 			<?php
 				}
 			?>
@@ -105,18 +106,19 @@
 
     <h2 class="jumbotron text-center" id="belgie">België</h2>
     <div class="row text-center" id="keuze">
-      <?php 
+      <?php
         foreach ($be as $provbe => $item) {
+            $slug = ($provbe === 'limburg') ? 'sexdate-limburg-be' : 'sexdate-' . $provbe;
       ?>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100 text-left">
-          <a href="sexdate-<?php echo $provbe; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
+          <a href="<?php echo $slug; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
           <div class="card-body">
-            <a href="sexdate-<?php echo $provbe; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
+            <a href="<?php echo $slug; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
             <hr>
             <p class="card-text"><?php echo $item['info']; ?></p>
           </div>
-          <a href="sexdate-<?php echo $provbe; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
+          <a href="<?php echo $slug; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
         </div>
       </div>
       <?php

@@ -9,11 +9,12 @@
 		return $output;
 	}
 	
-	if(isset($_GET['item'])) {
-		$provincie = strip_bad_chars( $_GET['item'] );
+        if(isset($_GET['item'])) {
+                $provincie = strip_bad_chars( $_GET['item'] );
                 $provincie = preg_replace('/^sexdate-/', '', $provincie);
-		$provnl = $nl[$provincie];
-	} 
+                $provincie = preg_replace('/-nl$/', '', $provincie);
+                $provnl = $nl[$provincie];
+        }
 ?>
 	
 <div class="container">
