@@ -17,7 +17,7 @@
                         <?php
 
                         foreach ($navItemsBE as $item) {
-                                echo "<a class=\"dropdown-item\" href=\"$item2[slug]\">$item2[title]</a>";
+                                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
                         }
 
                         ?>
