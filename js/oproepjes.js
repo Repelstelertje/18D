@@ -27,11 +27,16 @@ var oproepjes= new Vue({
         init: function(){
             axios.get(api_url)
                 .then(function(response){
-                    oproepjes.profiles= response.data.profiles;
+                    oproepjes.profiles = response.data.profiles.map(function(p){
+                        if(p.src && p.src.indexOf('no_img_Vrouw.jpg') !== -1){
+                            p.src = 'img/fallback.svg';
+                        }
+                        return p;
+                    });
                 })
                 .catch(function (error) {
                     console.log(error);
-                });            
+                });
         },
         set_page_number: function(page){
             if(page <= 1){
@@ -43,6 +48,9 @@ var oproepjes= new Vue({
             }
             
             
+        },
+        imgError: function(event){
+            event.target.src = 'img/fallback.svg';
         }
     }
 });

@@ -89,7 +89,7 @@
 			?>
 			<div class="col-lg-3 col-md-6 mb-4">
 	      <div class="card h-100 text-left">
-	        <a href="sexdate-<?php echo $provnl; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+                <a href="sexdate-<?php echo $provnl; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
 	        <div class="card-body">
 	          <a href="sexdate-<?php echo $provnl; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
 	          <hr>
@@ -110,7 +110,7 @@
       ?>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100 text-left">
-          <a href="sexdates-<?php echo $provbe; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <a href="sexdates-<?php echo $provbe; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
           <div class="card-body">
             <a href="sexdates-<?php echo $provbe; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
             <hr>
@@ -128,7 +128,7 @@
       <?php foreach ($uk as $provuk => $item) { ?>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100 text-left">
-          <a href="sexdate-<?php echo $provuk; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <a href="sexdate-<?php echo $provuk; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
           <div class="card-body">
             <a href="sexdate-<?php echo $provuk; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
             <hr>
@@ -144,7 +144,7 @@
       <?php foreach ($de as $provde => $item) { ?>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100 text-left">
-          <a href="sexdate-<?php echo $provde; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <a href="sexdate-<?php echo $provde; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
           <div class="card-body">
             <a href="sexdate-<?php echo $provde; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
             <hr>
@@ -160,7 +160,7 @@
       <?php foreach ($at as $provat => $item) { ?>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100 text-left">
-          <a href="sexdate-<?php echo $provat; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <a href="sexdate-<?php echo $provat; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
           <div class="card-body">
             <a href="sexdate-<?php echo $provat; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
             <hr>
@@ -176,7 +176,7 @@
       <?php foreach ($ch as $provch => $item) { ?>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100 text-left">
-          <a href="sexdate-<?php echo $provch; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>"></a>
+          <a href="sexdate-<?php echo $provch; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Sexdate <?php echo $item['name']; ?>" @error="imgError"></a>
           <div class="card-body">
             <a href="sexdate-<?php echo $provch; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
             <hr>
