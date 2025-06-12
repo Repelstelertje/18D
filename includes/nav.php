@@ -4,7 +4,7 @@
 		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		  	<?php
 
-		    	foreach ($navItems as $item) {
+		    	foreach ($navItemsNL as $item) {
 		      		echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
 		    	}
 		    
@@ -16,7 +16,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <?php
 
-                        foreach ($navItems2 as $item2) {
+                        foreach ($navItemsBE as $item) {
                                 echo "<a class=\"dropdown-item\" href=\"$item2[slug]\">$item2[title]</a>";
                         }
 

@@ -1,6 +1,6 @@
 <?php
 // Nav Menu Items
-$navItems = array(	
+$navItemsNL = array(	
 	array('slug' 	=> 'sexdate-drenthe','title' 	=> 'Drenthe'),	
 	array('slug' 	=> 'sexdate-flevoland','title' 	=> 'Flevoland'),	
 	array('slug' 	=> 'sexdate-friesland','title' 	=> 'Friesland'),	
@@ -14,7 +14,7 @@ $navItems = array(
 	array('slug' 	=> 'sexdate-zeeland','title' 	=> 'Zeeland'	),	
 	array('slug' 	=> 'sexdate-zuid-holland','title' => 'Zuid-Holland'),
 );
-$navItems2 = array(
+$navItemsBE = array(
 	array('slug' 	=> 'sexdate-antwerpen','title' => 'Antwerpen'	),	
 	array('slug' 	=> 'sexdate-brussel','title' 	=> 'Brussel'	),	
 	array('slug' 	=> 'sexdate-henegouwen','title'=> 'Henegouwen'	),	
