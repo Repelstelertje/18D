@@ -1,7 +1,6 @@
 <?php
 	define("TITLE", "Daten");
-        include('includes/header.php');
-        include('config.php');
+  include('includes/header.php');
 ?>
 <!-- Page Content -->
     <div class="container" id="profiel">
