@@ -23,6 +23,7 @@
                 exit;
         }
 
+  $metaDescription = $provde['info'];
   include('includes/header.php');
 ?>
 

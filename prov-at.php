@@ -23,6 +23,7 @@
                 exit;
         }
 
+  $metaDescription = $provat['info'];
   include('includes/header.php');
 ?>
 
