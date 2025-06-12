@@ -48,11 +48,13 @@
 
 <?php
 if(isset($_GET['item'])){
-  echo '<link rel="canonical" href="https://18date.net/sexdate-'.$_GET['item'].'" >';
-  echo '<title>Sexdate '.$_GET['item'].' | 18Date.net</title>';
+  $item = filter_var($_GET['item'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+  echo '<link rel="canonical" href="https://18date.net/sexdate-'.$item.'" >';
+  echo '<title>Sexdate '.$item.' | 18Date.net</title>';
 } else if(isset($_GET['id'])){
-  echo '<link rel="canonical" href="https://18date.net/profile?id='.$_GET['id'].'" >';
-  echo '<title>Sexdate met '.$_GET['id'].' | 18Date.net</title>';
+  $id = filter_var($_GET['id'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+  echo '<link rel="canonical" href="https://18date.net/profile?id='.$id.'" >';
+  echo '<title>Sexdate met '.$id.' | 18Date.net</title>';
 } else {
   echo '<link rel="canonical" href="https://18date.net" >';
   echo '<title>18+ Sexdating | 18Date.net</title>';
