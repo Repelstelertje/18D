@@ -25,6 +25,10 @@ var oproepjes= new Vue({
     },
     methods:  {
         init: function(){
+            if (typeof api_url === 'undefined') {
+                // Skip API call when no endpoint is defined on the page
+                return;
+            }
             axios.get(api_url)
                 .then(function(response){
                     if(response.data && Array.isArray(response.data.profiles)){
