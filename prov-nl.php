@@ -24,6 +24,7 @@
                 exit;
         }
 
+  $metaDescription = $provnl['info'];
   include('includes/header.php');
 ?>
 	

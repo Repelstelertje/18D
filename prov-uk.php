@@ -23,6 +23,7 @@
                 exit;
         }
 
+  $metaDescription = $provuk['info'];
   include('includes/header.php');
 ?>
 

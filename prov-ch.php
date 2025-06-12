@@ -23,6 +23,7 @@
                 exit;
         }
 
+  $metaDescription = $provch['info'];
   include('includes/header.php');
 ?>
 

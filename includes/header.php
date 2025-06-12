@@ -39,7 +39,11 @@
 
 <meta http-equiv="content-type" content-type="text/html" charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Gratis dating - Ben jij op zoek naar een partner of een leuke gratis date? Hier vind je meer dan 10.000 vrijgezellen. Aanmelding is 100% gratis.">
+<?php
+  $defaultDescription = "Gratis dating - Ben jij op zoek naar een partner of een leuke gratis date? Hier vind je meer dan 10.000 vrijgezellen. Aanmelding is 100% gratis.";
+  $description = isset($metaDescription) ? $metaDescription : $defaultDescription;
+?>
+<meta name="description" content="<?php echo htmlspecialchars($description, ENT_QUOTES, 'UTF-8'); ?>">
 <meta name="author" content="18Date">
 
 <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57.png">

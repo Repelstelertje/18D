@@ -24,6 +24,7 @@
                 exit;
         }
 
+  $metaDescription = $provbe['info'];
   include('includes/header.php');
 ?>
 	
