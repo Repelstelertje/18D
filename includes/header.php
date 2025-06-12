@@ -63,6 +63,7 @@
 <?php
 if(isset($_GET['item'])){
   $item = filter_var($_GET['item'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+  $item = preg_replace('/^sexdate-/', '', $item);
   echo '<link rel="canonical" href="https://18date.net/sexdate-'.$item.'" >';
   echo '<title>Sexdate '.$item.' | 18Date.net</title>';
 } else if(isset($_GET['id'])){
