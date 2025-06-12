@@ -21,7 +21,7 @@
         <div class="dropdown-menu" aria-labelledby="provDropdown">
           <?php
             foreach ($navItemsNL as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$nederland[slug]\">$nederland[title]</a>";
+                echo "<a class=\"dropdown-item\" href=\"$nederland[slug]\">$item[title]</a>";
             }
           ?>
         </div>
@@ -31,7 +31,7 @@
         <div class="dropdown-menu" aria-labelledby="provDropdown">
           <?php
             foreach ($navItemsBE as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$item2[slug]\">$item2[title]</a>";
+                echo "<a class=\"dropdown-item\" href=\"$item2[slug]\">$item[title]</a>";
             }
           ?>
         </div>
