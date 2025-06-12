@@ -2,7 +2,6 @@
 	define("TITLE", "Datingtips");
 
   	include('includes/array_tips.php');
-  	include('includes/array_prov.php');
 	include('includes/header.php');
 
 	function strip_bad_chars( $input ) {
