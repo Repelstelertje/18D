@@ -11,7 +11,7 @@ RewriteRule ^(.+)$ $1.php [QSA]
 RewriteRule ^(sexdate-drenthe|sexdate-flevoland|sexdate-friesland|sexdate-gelderland|sexdate-groningen|sexdate-limburg|sexdate-noord-brabant|sexdate-noord-holland|sexdate-overijssel|sexdate-utrecht|sexdate-zeeland|sexdate-zuid-holland)/?$ prov-nl.php?item=$1 [L,QSA]
 
 # Provinces Belgium
-RewriteRule ^(sexdates-antwerpen|sexdates-brussel|sexdates-henegouwen|sexdates-limburg|sexdates-luik|sexdates-luxemburg|sexdates-namen|sexdates-oost-vlaanderen|sexdates-vlaams-brabant|sexdates-waals-brabant|sexdates-west-vlaanderen)/?$ prov-be.php?item=$1 [L,QSA]
+RewriteRule ^(sexdate-antwerpen|sexdate-brussel|sexdate-henegouwen|sexdate-limburg|sexdate-luik|sexdate-luxemburg|sexdate-namen|sexdate-oost-vlaanderen|sexdate-vlaams-brabant|sexdate-waals-brabant|sexdate-west-vlaanderen)/?$ prov-be.php?item=$1 [L,QSA]
 
 # Provinces United Kingdom
 RewriteRule ^(sexdate-east-midlands|sexdate-east-of-england|sexdate-london|sexdate-north-east-england|sexdate-north-west-england|sexdate-northern-ireland|sexdate-scotland|sexdate-south-east-england|sexdate-south-west-england|sexdate-wales|sexdate-west-midlands|sexdate-yorkshire-and-the-humber)/?$ prov-uk.php?item=$1 [L,QSA]

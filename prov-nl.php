@@ -12,6 +12,7 @@
 	
 	if(isset($_GET['item'])) {
 		$provincie = strip_bad_chars( $_GET['item'] );
+                $provincie = preg_replace('/^sexdates?-/', '', $provincie);
 		$provnl = $nl[$provincie];
 	} 
 ?>
@@ -64,7 +65,7 @@
         </div>
         <div class="jumbotron text-center">
             <a href="https://oproepjesnederland.nl/dating-<?php echo $provnl['img']; ?>" class="btn btn-primary btn-tips" target="_blank">Dating Advertenties <?php echo $provnl['name']; ?></a>
-            <a href="https://sex55.net/sexdates-<?php echo $provnl['img']; ?>" class="btn btn-primary btn-tips" target="_blank">55+ Sexdate <?php echo $provnl['name']; ?></a>
+            <a href="https://sex55.net/sexdate-<?php echo $provnl['img']; ?>" class="btn btn-primary btn-tips" target="_blank">55+ Sexdate <?php echo $provnl['name']; ?></a>
             <a href="https://shemaledaten.net/shemale-<?php echo $provnl['img']; ?>" class="btn btn-primary btn-tips" target="_blank">Shemale sexdate <?php echo $provnl['name']; ?></a>
         </div>
     </div> 
