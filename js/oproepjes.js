@@ -27,12 +27,16 @@ var oproepjes= new Vue({
         init: function(){
             axios.get(api_url)
                 .then(function(response){
-                    oproepjes.profiles = response.data.profiles.map(function(p){
-                        if(p.src && p.src.indexOf('no_img_Vrouw.jpg') !== -1){
-                            p.src = 'img/fallback.svg';
-                        }
-                        return p;
-                    });
+                    if(response.data && Array.isArray(response.data.profiles)){
+                        oproepjes.profiles = response.data.profiles.map(function(p){
+                            if(p.src && p.src.indexOf('no_img_Vrouw.jpg') !== -1){
+                                p.src = 'img/fallback.svg';
+                            }
+                            return p;
+                        });
+                    } else {
+                        console.error('Invalid profile data', response.data);
+                    }
                 })
                 .catch(function (error) {
                     console.log(error);

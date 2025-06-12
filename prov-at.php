@@ -40,7 +40,7 @@
         </div>  
     </div><!-- /.row -->
     <script>
-        var api_url= "<?= api_base('at'); ?>/profile/province_age/at/<?=$provat['name']?>/18/45/120/S";
+        var api_url= "<?= api_base('at'); ?>/profile/province_age/at/<?= rawurlencode($provat['name']); ?>/18/45/120/S";
     </script>
 
     <!-- Pagination -->
