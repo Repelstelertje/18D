@@ -3,7 +3,8 @@
 
   include('includes/arr_prov_nl.php');
   include('includes/arr_prov_be.php');
-	include('includes/header.php');
+  include('includes/header.php');
+  include('config.php');
 
 	function strip_bad_chars( $input ) {
 		$output = preg_replace( "/[^a-zA-Z0-9_-]/", "",$input);
@@ -40,7 +41,7 @@
             <a :href="'profile.php?country=nl&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a></div>
         </div>
         <script>
-            var api_url= "https://16hl07csd16.nl/profile/province_age/nl/<?=$provnl['name']?>/18/45/120/S";
+            var api_url= "<?= api_base('nl'); ?>/profile/province_age/nl/<?=$provnl['name']?>/18/45/120/S";
         </script>
 
         <!-- Pagination -->

@@ -2,7 +2,8 @@
 	define("TITLE", "Daten in");
 
   include('includes/arr_prov_be.php');
-	include('includes/header.php');
+  include('includes/header.php');
+  include('config.php');
 
 	function strip_bad_chars( $input ) {
 		$output = preg_replace( "/[^a-zA-Z0-9_-]/", "",$input);
@@ -44,7 +45,7 @@
         </div>
       </div>
       <script>
-        var api_url= "https://20fhbe2020.be/profile/province_age/be/<?=$provbe['name']?>/18/45/120/S";
+        var api_url= "<?= api_base('be'); ?>/profile/province_age/be/<?=$provbe['name']?>/18/45/120/S";
       </script>
 
       <!-- Pagination -->
