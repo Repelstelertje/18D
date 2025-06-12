@@ -20,7 +20,7 @@
         <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nederland</a>
         <div class="dropdown-menu" aria-labelledby="provDropdown">
           <?php
-            foreach ($navItems as $nederland) {
+            foreach ($navItemsNL as $nederland) {
                 echo "<a class=\"dropdown-item\" href=\"$nederland[slug]\">$nederland[title]</a>";
             }
           ?>
@@ -30,7 +30,7 @@
         <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">België</a>
         <div class="dropdown-menu" aria-labelledby="provDropdown">
           <?php
-            foreach ($navItems2 as $item2) {
+            foreach ($navItemsBE as $item2) {
                 echo "<a class=\"dropdown-item\" href=\"$item2[slug]\">$item2[title]</a>";
             }
           ?>
