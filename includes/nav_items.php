@@ -22,10 +22,10 @@ $navItems2 = array(
 	array('slug' 	=> 'sexdates-luik','title' 	=> 'Luik'	),	
 	array('slug' 	=> 'sexdates-luxemburg','title'	=> 'Luxemburg'	),	
 	array('slug' 	=> 'sexdates-namen','title' 	=> 'Namen'	),
-	array('slug' 	=> 'sexdates-oost-vlaanderen','title' => 'Oost-Vlaanderen'	),	
-	srray('slug' 	=> 'sexdates-vlaams-brabant','title' => 'Vlaams-Brabant'	),	
+	array('slug' 	=> 'sexdates-oost-vlaanderen','title' => 'Oost-Vlaanderen'),	
+	array('slug' 	=> 'sexdates-vlaams-brabant','title' => 'Vlaams-Brabant'),	
 	array('slug' 	=> 'sexdates-waals-brabant','title' => 'Waals-Brabant'	),	
-	array('slug' 	=> 'sexdates-west-vlaanderen','title' => 'West-Vlaanderen'	),
+	array('slug' 	=> 'sexdates-west-vlaanderen','title' => 'West-Vlaanderen'),
 );
 $navItemsUK = array(       
 	array('slug' => 'sexdate-east-midlands','title' => 'East Midlands'),        
