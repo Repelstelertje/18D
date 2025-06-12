@@ -32,9 +32,25 @@
       <div id="footer-banner"></div>
     </div><!-- Container -->
 
+<?php
+  $country = isset($_GET['country']) ? $_GET['country'] : '';
+  switch ($country) {
+    case 'nl':
+      $api_url = 'https://16hl07csd16.nl/profile/get0/6/';
+      $ref_id = '32';
+      break;
+    case 'be':
+      $api_url = 'https://20fhbe2020.be/profile/get0/7/';
+      $ref_id = '32';
+      break;
+    default:
+      $api_url = 'https://16hl07csd16.nl/profile/get/';
+      $ref_id = '5';
+  }
+?>
 <script>
-  var api_url= "https://16hl07csd16.nl/profile/get/";
-  var ref_id= "5"; //de ref_id vd landingwebsite
+  var api_url = "<?= $api_url ?>";
+  var ref_id = "<?= $ref_id ?>"; //de ref_id vd landingwebsite
 </script>
 
 <?php 
