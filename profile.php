@@ -11,7 +11,7 @@
         <div class="row">
 
           <div class="col-sm-4 text-center">
-            <img class="profile-pic" :src="profile.profile_image_big">
+            <img class="profile-pic" :src="profile.profile_image_big" @error="imgError">
           </div>
 
           <div class="col-sm-8">

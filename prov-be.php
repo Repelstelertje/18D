@@ -28,7 +28,7 @@
            v-for="profile in filtered_profiles"
           >
         <div class="card h-100">
-            <a :href="'profile.php?country=be&id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Flevoland'"></a>
+            <a :href="'profile.php?country=be&id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Flevoland'" @error="imgError"></a>
             <div class="card-body">
             	<div class="card-top">
                   <h4 class="card-title">{{ profile.name }}</h4>  
