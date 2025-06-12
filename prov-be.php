@@ -44,8 +44,8 @@
         </div>
       </div>
       <script>
-        var api_url= "<?= api_base('be'); ?>/profile/province_age/be/<?=$provbe['name']?>/18/45/120/S";
-      </script> 
+        var api_url= "<?= api_base('be'); ?>/profile/province_age/be/<?= rawurlencode($provbe['name']); ?>/18/45/120/S";
+      </script>
     </div><!-- /.row -->
     <!-- Pagination -->
     <nav class="nav-pag" aria-label="Page navigation">

@@ -39,7 +39,7 @@
             <a :href="'profile.php?country=de&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a></div>
         </div>
         <script>
-            var api_url= "<?= api_base('de'); ?>/profile/province_age/de/<?=$provde['name']?>/18/45/120/S";
+            var api_url= "<?= api_base('de'); ?>/profile/province_age/de/<?= rawurlencode($provde['name']); ?>/18/45/120/S";
         </script>
     </div><!-- /.row -->
     <!-- Pagination -->
