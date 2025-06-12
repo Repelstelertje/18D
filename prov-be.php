@@ -2,19 +2,29 @@
 	define("TITLE", "Daten in");
 
   include('includes/arr_prov_be.php');
-  include('includes/header.php');
 
 	function strip_bad_chars( $input ) {
 		$output = preg_replace( "/[^a-zA-Z0-9_-]/", "",$input);
 		return $output;
 	}
 	
+        $provbe = null;
         if(isset($_GET['item'])) {
                 $provincie = strip_bad_chars( $_GET['item'] );
                 $provincie = preg_replace('/^sexdate-/', '', $provincie);
                 $provincie = preg_replace('/-be$/', '', $provincie);
-                $provbe = $be[$provincie];
+                if (isset($be[$provincie])) {
+                        $provbe = $be[$provincie];
+                }
         }
+
+        if (!$provbe) {
+                header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+                include '404.php';
+                exit;
+        }
+
+  include('includes/header.php');
 ?>
 	
 	<div class="container">
