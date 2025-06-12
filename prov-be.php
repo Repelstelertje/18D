@@ -3,7 +3,7 @@
 
   include('includes/arr_prov_be.php');
   include('includes/header.php');
-  include('config.php');
+  include_once('config.php');
 
 	function strip_bad_chars( $input ) {
 		$output = preg_replace( "/[^a-zA-Z0-9_-]/", "",$input);

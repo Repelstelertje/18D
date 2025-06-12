@@ -1,7 +1,7 @@
 <?php
 	define("TITLE", "Daten");
         include('includes/header.php');
-        include('config.php');
+        include_once('config.php');
 ?>
 <!-- Page Content -->
     <div class="container" id="profiel">
