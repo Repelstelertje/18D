@@ -14,10 +14,10 @@
 </footer>
 </div> <!-- /.oproepjes -->
 
-<script src="https://16hl07csd16.nl/cdn/oproepjes/js/vue.2.5.13.min.js"></script>
-<script src="https://16hl07csd16.nl/cdn/oproepjes/js/axios.0.17.1.min.js"></script>
-<script src="https://16hl07csd16.nl/cdn/oproepjes/jquery/jquery.min.js"></script>
-<script src="https://16hl07csd16.nl/cdn/oproepjes/js/bootstrap.bundle.min.js"></script>
+<script src="js/vendor/vue.2.5.13.min.js"></script>
+<script src="js/vendor/axios.0.17.1.min.js"></script>
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
 	////Random IMG
 	var topper = ['1.gif', '2.gif', '3.gif', '4.gif', '5.gif', '6.gif', '7.gif', '8.gif', '9.gif', '10.gif'];
