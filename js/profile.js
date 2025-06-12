@@ -3,16 +3,23 @@ var router = new VueRouter({
     routes: []
 });
 
+function getQueryParam(name){
+    var params = new URLSearchParams(window.location.search);
+    return params.get(name);
+}
+
 var profiel= new Vue({
     router,
     el: "#profiel",
     created: function(){
-        if(1*this.$route.query.id > 0){
-            this.profile_id= 1*this.$route.query.id;
+        var id = this.$route && this.$route.query ? this.$route.query.id : null;
+        if(!id){
+            id = getQueryParam('id');
+        }
+        if(1*id > 0){
+            this.profile_id = 1*id;
             this.init();
         }
-        
-        
         console.log(this.profile_id);
     },
     data: {
