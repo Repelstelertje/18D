@@ -2,7 +2,6 @@
 	define("TITLE", "Daten in");
 
   include('includes/arr_prov_nl.php');
-  include('includes/arr_prov_be.php');
   include('includes/header.php');
 
 	function strip_bad_chars( $input ) {
