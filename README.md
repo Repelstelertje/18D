@@ -14,4 +14,4 @@ country. Base URLs can be overridden using environment variables:
 - `API_BASE_URL_DEFAULT` - default API endpoint
 - `API_BASE_URL_BE` - Belgium specific endpoint
 - `API_BASE_URL_UK` - United Kingdom specific endpoint
-- `API_BASE_URL_DE` - Germany specific endpoint
+ - `API_BASE_URL_DE` - Germany specific endpoint, also used for Austria (`AT`) and Switzerland (`CH`)

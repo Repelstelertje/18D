@@ -29,6 +29,8 @@ function api_base($country = '') {
         case 'uk':
             return $API_BASE_UK;
         case 'de':
+        case 'at':
+        case 'ch':
             return $API_BASE_DE;
         default:
             return $API_BASE_DEFAULT;
