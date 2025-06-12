@@ -2,6 +2,20 @@
 
   $companyName = "18Date.net";
   include('includes/nav_items.php');
+  // Config is required for API lookups when rendering profile pages
+  include_once('config.php');
+
+  /**
+   * Convert a string to a URL friendly slug.
+   *
+   * @param string $text
+   * @return string
+   */
+  function slugify($text) {
+    $text = strtolower(trim($text));
+    $text = preg_replace('/[^a-z0-9]+/', '-', $text);
+    return trim($text, '-');
+  }
 
   // Control error visibility through an environment variable. By default
   // errors are hidden in production unless APP_DEBUG is truthy.
@@ -53,8 +67,41 @@ if(isset($_GET['item'])){
   echo '<title>Sexdate '.$item.' | 18Date.net</title>';
 } else if(isset($_GET['id'])){
   $id = filter_var($_GET['id'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-  echo '<link rel="canonical" href="https://18date.net/profile?id='.$id.'" >';
-  echo '<title>Sexdate met '.$id.' | 18Date.net</title>';
+  $country = isset($_GET['country']) ? $_GET['country'] : '';
+  switch ($country) {
+    case 'nl':
+      $api_url = api_base('nl') . '/profile/get0/6/';
+      break;
+    case 'be':
+      $api_url = api_base('be') . '/profile/get0/7/';
+      break;
+    case 'de':
+    case 'at':
+    case 'ch':
+      $api_url = api_base('de') . '/profile/get/';
+      break;
+    case 'uk':
+      $api_url = api_base('uk') . '/profile/get/';
+      break;
+    default:
+      $api_url = api_base() . '/profile/get/';
+  }
+  $profile_json = @file_get_contents($api_url . $id);
+  $profile_name = '';
+  if($profile_json){
+    $data = json_decode($profile_json, true);
+    if(isset($data['profile']['name'])){
+      $profile_name = $data['profile']['name'];
+    }
+  }
+  if($profile_name){
+    $slug = slugify($profile_name);
+    echo '<link rel="canonical" href="https://18date.net/date-' . $slug . '" >';
+    echo '<title>Date ' . htmlspecialchars($profile_name, ENT_QUOTES, 'UTF-8') . '</title>';
+  } else {
+    echo '<link rel="canonical" href="https://18date.net/profile?id=' . $id . '" >';
+    echo '<title>Sexdate met ' . $id . ' | 18Date.net</title>';
+  }
 } else {
   echo '<link rel="canonical" href="https://18date.net" >';
   echo '<title>18+ Sexdating | 18Date.net</title>';

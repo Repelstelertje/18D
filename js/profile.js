@@ -8,6 +8,15 @@ function getQueryParam(name){
     return params.get(name);
 }
 
+function slugify(str){
+    return str.toString().toLowerCase()
+        .replace(/\s+/g,'-')
+        .replace(/[^\w-]+/g,'')
+        .replace(/--+/g,'-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
+}
+
 var profiel= new Vue({
     router,
     el: "#profiel",
@@ -48,6 +57,16 @@ var profiel= new Vue({
                     that.profile = response.data.profile;
                     if(that.profile.profile_image_big && that.profile.profile_image_big.indexOf('no_img_Vrouw.jpg') !== -1){
                         that.profile.profile_image_big = 'img/fallback.svg';
+                    }
+                    var slug = slugify(that.profile.name || '');
+                    if(slug){
+                        var newUrl = '/date-' + slug;
+                        var link = document.querySelector('link[rel=canonical]');
+                        if(link){
+                            link.setAttribute('href', 'https://18date.net' + newUrl);
+                        }
+                        document.title = 'Date ' + that.profile.name;
+                        history.replaceState({}, '', newUrl);
                     }
                 })
                 .catch(function (error) {
