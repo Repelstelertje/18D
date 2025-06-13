@@ -41,9 +41,9 @@
 <script src="https://unpkg.com/vue-router@3.5.3"></script>
 <?php 
   if(isset ($type) && $type == "profile"){
-    echo '<script src="js/profile.js?01"></script>';
+    echo '<script src="js/profile.js"></script>';
   } else {
-    echo '<script src="js/oproepjes.js?04"></script>';
+    echo '<script src="js/oproepjes.js"></script>';
   }
 ?>
 </body>

@@ -439,4 +439,19 @@
   <lastmod>2025-06-12T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://18date.nl/privacy.php</loc>
+  <lastmod>2025-06-12</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://18date.nl/cookie-policy.php</loc>
+  <lastmod>2025-06-12</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://18date.nl/partnerlinks.php</loc>
+  <lastmod>2025-06-12</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>

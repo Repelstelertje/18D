@@ -157,7 +157,6 @@
       <div class="container">
         <a class="navbar-brand" href="https://18date.net/"><img class="logo" src="img/logo.png" alt="18Date"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
-
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <?php
             include('includes/nav.php');
