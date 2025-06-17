@@ -26,12 +26,16 @@ $base = __DIR__;
 ?>
 
 <div class="container">
-	<div class='jumbotron my-4'>
-		<h1 class='text-center'><?php echo $tips["title"]; ?></h1>
-	</div>
-	<div class='jumbotron my-4'>
-		<?php echo $tips["tekst"]; ?>
-	</div>
+        <div class='jumbotron my-4'>
+                <h1 class='text-center'><?php echo htmlspecialchars($tips["title"], ENT_QUOTES, 'UTF-8'); ?></h1>
+        </div>
+        <div class='jumbotron my-4'>
+                <?php
+                        // $tips["tekst"] contains trusted HTML defined in includes/array_tips.php
+                        // and is therefore output without additional escaping.
+                        echo $tips["tekst"];
+                ?>
+        </div>
 </div>
 
 <?php include $base . '/includes/footer.php'; ?>
