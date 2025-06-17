@@ -3,10 +3,7 @@
 
         include('includes/array_tips.php');
 
-	function strip_bad_chars( $input ) {
-		$output = preg_replace( "/[^a-zA-Z0-9_-]/", "",$input);
-		return $output;
-	}
+        require_once 'includes/utils.php';
 	
         $tips = null;
         if(isset($_GET['item'])) {
