@@ -99,12 +99,12 @@ $navItemsCH = array(
 );
 
 $navItemsTips = array(
-        array('slug' => 'datingtips.php?item=datingtips','title' => 'Datingtips'),
-        array('slug' => 'datingtips.php?item=nl','title' => 'Datingtips Nederland'),
-        array('slug' => 'datingtips.php?item=be','title' => 'Datingtips België'),
-        array('slug' => 'datingtips.php?item=de','title' => 'Datingtips Duitsland'),
-        array('slug' => 'datingtips.php?item=uk','title' => 'Datingtips Verenigd Koninkrijk'),
-        array('slug' => 'datingtips.php?item=at','title' => 'Datingtips Oostenrijk'),
-        array('slug' => 'datingtips.php?item=ch','title' => 'Datingtips Zwitserland'),
+        array('slug' => 'datingtips','title' => 'Datingtips'),
+        array('slug' => 'datingtips-nederland','title' => 'Datingtips Nederland'),
+        array('slug' => 'datingtips-belgie','title' => 'Datingtips België'),
+        array('slug' => 'datingtips-duitsland','title' => 'Datingtips Duitsland'),
+        array('slug' => 'datingtips-verenigd-koninkrijk','title' => 'Datingtips Verenigd Koninkrijk'),
+        array('slug' => 'datingtips-oostenrijk','title' => 'Datingtips Oostenrijk'),
+        array('slug' => 'datingtips-zwitserland','title' => 'Datingtips Zwitserland'),
 );
 ?>

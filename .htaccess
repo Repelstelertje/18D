@@ -25,6 +25,15 @@ RewriteRule ^(sexdate-burgenland|sexdate-karnten|sexdate-niederosterreich|sexdat
 # Provinces Switzerland
 RewriteRule ^(sexdate-aargau|sexdate-appenzell|sexdate-basel-land|sexdate-basel-stadt|sexdate-bern|sexdate-fribourg|sexdate-geneve|sexdate-glarus|sexdate-graubunden|sexdate-jura|sexdate-luzern|sexdate-neuchatel|sexdate-nidwalden|sexdate-obwalden|sexdate-schaffhausen|sexdate-schwyz|sexdate-solothurn|sexdate-st-gallen|sexdate-thurgau|sexdate-ticino|sexdate-uri|sexdate-valais|sexdate-vaud|sexdate-zug|sexdate-zurich)/?$ prov-ch.php?item=$1 [L,QSA]
 
+# Datingtips
+RewriteRule ^datingtips/?$ datingtips.php?item=datingtips [L,QSA]
+RewriteRule ^datingtips-nederland/?$ datingtips.php?item=nl [L,QSA]
+RewriteRule ^datingtips-belgie/?$ datingtips.php?item=be [L,QSA]
+RewriteRule ^datingtips-duitsland/?$ datingtips.php?item=de [L,QSA]
+RewriteRule ^datingtips-verenigd-koninkrijk/?$ datingtips.php?item=uk [L,QSA]
+RewriteRule ^datingtips-oostenrijk/?$ datingtips.php?item=at [L,QSA]
+RewriteRule ^datingtips-zwitserland/?$ datingtips.php?item=ch [L,QSA]
+
 ErrorDocument 404 https://18date.net/404.php
 
 <IfModule mod_deflate.c>

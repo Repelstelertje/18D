@@ -71,21 +71,55 @@
 
   if(isset($_GET['item'])){
     $item = filter_var($_GET['item'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $item = preg_replace('/^sexdate-/', '', $item);
-    $canonical = 'https://18date.net/sexdate-' . $item;
-    $pageTitle = 'Sexdate ' . $item . ' | 18Date.net';
-    if(isset($provnl['img'])){
-      $ogImage = 'https://18date.net/img/front/' . $provnl['img'] . '.jpg';
-    } elseif(isset($provbe['img'])){
-      $ogImage = 'https://18date.net/img/front/' . $provbe['img'] . '.jpg';
-    } elseif(isset($provuk['img'])){
-      $ogImage = 'https://18date.net/img/front/' . $provuk['img'] . '.jpg';
-    } elseif(isset($provde['img'])){
-      $ogImage = 'https://18date.net/img/front/' . $provde['img'] . '.jpg';
-    } elseif(isset($provat['img'])){
-      $ogImage = 'https://18date.net/img/front/' . $provat['img'] . '.jpg';
-    } elseif(isset($provch['img'])){
-      $ogImage = 'https://18date.net/img/front/' . $provch['img'] . '.jpg';
+
+    if(basename($_SERVER['PHP_SELF']) === 'datingtips.php'){
+      switch($item){
+        case 'datingtips':
+          $canonical = 'https://18date.net/datingtips';
+          $pageTitle = 'Datingtips | 18Date.net';
+          break;
+        case 'nl':
+          $canonical = 'https://18date.net/datingtips-nederland';
+          $pageTitle = 'Datingtips Nederland | 18Date.net';
+          break;
+        case 'be':
+          $canonical = 'https://18date.net/datingtips-belgie';
+          $pageTitle = 'Datingtips België | 18Date.net';
+          break;
+        case 'de':
+          $canonical = 'https://18date.net/datingtips-duitsland';
+          $pageTitle = 'Datingtips Duitsland | 18Date.net';
+          break;
+        case 'uk':
+          $canonical = 'https://18date.net/datingtips-verenigd-koninkrijk';
+          $pageTitle = 'Datingtips Verenigd Koninkrijk | 18Date.net';
+          break;
+        case 'at':
+          $canonical = 'https://18date.net/datingtips-oostenrijk';
+          $pageTitle = 'Datingtips Oostenrijk | 18Date.net';
+          break;
+        case 'ch':
+          $canonical = 'https://18date.net/datingtips-zwitserland';
+          $pageTitle = 'Datingtips Zwitserland | 18Date.net';
+          break;
+      }
+    } else {
+      $item = preg_replace('/^sexdate-/', '', $item);
+      $canonical = 'https://18date.net/sexdate-' . $item;
+      $pageTitle = 'Sexdate ' . $item . ' | 18Date.net';
+      if(isset($provnl['img'])){
+        $ogImage = 'https://18date.net/img/front/' . $provnl['img'] . '.jpg';
+      } elseif(isset($provbe['img'])){
+        $ogImage = 'https://18date.net/img/front/' . $provbe['img'] . '.jpg';
+      } elseif(isset($provuk['img'])){
+        $ogImage = 'https://18date.net/img/front/' . $provuk['img'] . '.jpg';
+      } elseif(isset($provde['img'])){
+        $ogImage = 'https://18date.net/img/front/' . $provde['img'] . '.jpg';
+      } elseif(isset($provat['img'])){
+        $ogImage = 'https://18date.net/img/front/' . $provat['img'] . '.jpg';
+      } elseif(isset($provch['img'])){
+        $ogImage = 'https://18date.net/img/front/' . $provch['img'] . '.jpg';
+      }
     }
   } elseif(isset($_GET['id'])){
     $id = filter_var($_GET['id'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
