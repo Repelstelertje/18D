@@ -1,18 +1,29 @@
 <?php 
 	define("TITLE", "Datingtips");
 
-  	include('includes/array_tips.php');
-	include('includes/header.php');
+        include('includes/array_tips.php');
 
 	function strip_bad_chars( $input ) {
 		$output = preg_replace( "/[^a-zA-Z0-9_-]/", "",$input);
 		return $output;
 	}
 	
-	if(isset($_GET['item'])) {
-		$datingtip = strip_bad_chars( $_GET['item'] );
-		$tips = $datingtips[$datingtip];
-	}
+        $tips = null;
+        if(isset($_GET['item'])) {
+                $datingtip = strip_bad_chars( $_GET['item'] );
+                if (isset($datingtips[$datingtip])) {
+                        $tips = $datingtips[$datingtip];
+                }
+        }
+
+        if (!$tips) {
+                header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+                include '404.php';
+                exit;
+        }
+
+        $metaDescription = $tips['info'];
+        include('includes/header.php');
 ?>
 
 <div class="container">
