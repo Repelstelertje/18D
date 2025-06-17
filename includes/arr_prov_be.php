@@ -10,28 +10,28 @@ $be = array(
         'img' => "antwerpen"
     ),
 
-    "oost_vlaanderen" => array(
+    "oost-vlaanderen" => array(
         'name' => "Oost-Vlaanderen",
         'title' => "Sexdate Oost-Vlaanderen",
         'info' => "Op zoek naar een sexdate in Oost-Vlaanderen? Ontmoet hier jonge vrouwen uit jouw regio die openstaan voor spannende en discrete contacten via 18date.net.",
         'tekst' => "<h2>Sexdate Oost-Vlaanderen</h2><p>Wil je een leuke en spannende date in Oost-Vlaanderen? Op 18date.net ontmoet je jonge vrouwen die op zoek zijn naar contact zonder verplichtingen. Deze dames weten wat ze willen: discreet afspreken, flirten en genieten van een gezellige of opwindende ontmoeting. Of je nu in een stad woont of op het platteland, er is altijd wel iemand bij jou in de buurt.</p><p>Oost-Vlaanderen is de perfecte provincie voor lokale sexdates. Dankzij ons platform ontdek je eenvoudig welke singles klaar zijn voor een spannende chat of echte ontmoeting. De meeste vrouwen op onze site zijn tussen de 18 en 35 jaar en zoeken mannen voor leuke avonturen of meer. Alle profielen worden gecontroleerd voor jouw veiligheid.</p><p>Meld je gratis aan en begin vandaag nog met flirten. 18date.net brengt jou in contact met echte vrouwen die zin hebben in plezier en discretie waarderen. Ontdek nu wat Oost-Vlaanderen te bieden heeft!</p>",
-        'img' => "oost_vlaanderen"
+        'img' => "oost-vlaanderen"
     ),
 
-    "west_vlaanderen" => array(
+    "west-vlaanderen" => array(
         'name' => "West-Vlaanderen",
         'title' => "Sexdate West-Vlaanderen",
         'info' => "Op zoek naar een sexdate in West-Vlaanderen? Ontmoet hier jonge vrouwen uit jouw regio die openstaan voor spannende en discrete contacten via 18date.net.",
         'tekst' => "<h2>Sexdate West-Vlaanderen</h2><p>Wil je een leuke en spannende date in West-Vlaanderen? Op 18date.net ontmoet je jonge vrouwen die op zoek zijn naar contact zonder verplichtingen. Deze dames weten wat ze willen: discreet afspreken, flirten en genieten van een gezellige of opwindende ontmoeting. Of je nu in een stad woont of op het platteland, er is altijd wel iemand bij jou in de buurt.</p><p>West-Vlaanderen is de perfecte provincie voor lokale sexdates. Dankzij ons platform ontdek je eenvoudig welke singles klaar zijn voor een spannende chat of echte ontmoeting. De meeste vrouwen op onze site zijn tussen de 18 en 35 jaar en zoeken mannen voor leuke avonturen of meer. Alle profielen worden gecontroleerd voor jouw veiligheid.</p><p>Meld je gratis aan en begin vandaag nog met flirten. 18date.net brengt jou in contact met echte vrouwen die zin hebben in plezier en discretie waarderen. Ontdek nu wat West-Vlaanderen te bieden heeft!</p>",
-        'img' => "west_vlaanderen"
+        'img' => "west-vlaanderen"
     ),
 
-    "vlaams_brabant" => array(
+    "vlaams-brabant" => array(
         'name' => "Vlaams-Brabant",
         'title' => "Sexdate Vlaams-Brabant",
         'info' => "Op zoek naar een sexdate in Vlaams-Brabant? Ontmoet hier jonge vrouwen uit jouw regio die openstaan voor spannende en discrete contacten via 18date.net.",
         'tekst' => "<h2>Sexdate Vlaams-Brabant</h2><p>Wil je een leuke en spannende date in Vlaams-Brabant? Op 18date.net ontmoet je jonge vrouwen die op zoek zijn naar contact zonder verplichtingen. Deze dames weten wat ze willen: discreet afspreken, flirten en genieten van een gezellige of opwindende ontmoeting. Of je nu in een stad woont of op het platteland, er is altijd wel iemand bij jou in de buurt.</p><p>Vlaams-Brabant is de perfecte provincie voor lokale sexdates. Dankzij ons platform ontdek je eenvoudig welke singles klaar zijn voor een spannende chat of echte ontmoeting. De meeste vrouwen op onze site zijn tussen de 18 en 35 jaar en zoeken mannen voor leuke avonturen of meer. Alle profielen worden gecontroleerd voor jouw veiligheid.</p><p>Meld je gratis aan en begin vandaag nog met flirten. 18date.net brengt jou in contact met echte vrouwen die zin hebben in plezier en discretie waarderen. Ontdek nu wat Vlaams-Brabant te bieden heeft!</p>",
-        'img' => "vlaams_brabant"
+        'img' => "vlaams-brabant"
     ),
 
     "limburg" => array(
@@ -82,12 +82,12 @@ $be = array(
         'img' => "namen"
     ),
 
-    "waals_brabant" => array(
+    "waals-brabant" => array(
         'name' => "Waals-Brabant",
         'title' => "Sexdate Waals-Brabant",
         'info' => "Op zoek naar een sexdate in Waals-Brabant? Ontmoet hier jonge vrouwen uit jouw regio die openstaan voor spannende en discrete contacten via 18date.net.",
         'tekst' => "<h2>Sexdate Waals-Brabant</h2><p>Wil je een leuke en spannende date in Waals-Brabant? Op 18date.net ontmoet je jonge vrouwen die op zoek zijn naar contact zonder verplichtingen. Deze dames weten wat ze willen: discreet afspreken, flirten en genieten van een gezellige of opwindende ontmoeting. Of je nu in een stad woont of op het platteland, er is altijd wel iemand bij jou in de buurt.</p><p>Waals-Brabant is de perfecte provincie voor lokale sexdates. Dankzij ons platform ontdek je eenvoudig welke singles klaar zijn voor een spannende chat of echte ontmoeting. De meeste vrouwen op onze site zijn tussen de 18 en 35 jaar en zoeken mannen voor leuke avonturen of meer. Alle profielen worden gecontroleerd voor jouw veiligheid.</p><p>Meld je gratis aan en begin vandaag nog met flirten. 18date.net brengt jou in contact met echte vrouwen die zin hebben in plezier en discretie waarderen. Ontdek nu wat Waals-Brabant te bieden heeft!</p>",
-        'img' => "waals_brabant"
+        'img' => "waals-brabant"
     ),
 
 );
