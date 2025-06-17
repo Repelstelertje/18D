@@ -95,5 +95,16 @@ $navItemsCH = array(
 	array('slug' => 'sexdate-valais','title' => 'Valais'),        
 	array('slug' => 'sexdate-vaud','title' => 'Vaud'),        
 	array('slug' => 'sexdate-zug','title' => 'Zug'),        
-	array('slug' => 'sexdate-zurich','title' => 'Zürich'),
-);?>
+        array('slug' => 'sexdate-zurich','title' => 'Zürich'),
+);
+
+$navItemsTips = array(
+        array('slug' => 'datingtips.php?item=datingtips','title' => 'Datingtips'),
+        array('slug' => 'datingtips.php?item=nl','title' => 'Datingtips Nederland'),
+        array('slug' => 'datingtips.php?item=be','title' => 'Datingtips België'),
+        array('slug' => 'datingtips.php?item=de','title' => 'Datingtips Duitsland'),
+        array('slug' => 'datingtips.php?item=uk','title' => 'Datingtips Verenigd Koninkrijk'),
+        array('slug' => 'datingtips.php?item=at','title' => 'Datingtips Oostenrijk'),
+        array('slug' => 'datingtips.php?item=ch','title' => 'Datingtips Zwitserland'),
+);
+?>
