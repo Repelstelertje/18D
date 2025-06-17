@@ -43,7 +43,7 @@ $be = array(
     ),
 
     "brussel" => array(
-        'name' => "Brussel",
+        'name' => "Brussels",
         'title' => "Sexdate Brussel",
         'info' => "Op zoek naar een sexdate in Brussel? Ontmoet hier jonge vrouwen uit jouw regio die openstaan voor spannende en discrete contacten via 18date.net.",
         'tekst' => "<h2>Sexdate Brussel</h2><p>Wil je een leuke en spannende date in Brussel? Op 18date.net ontmoet je jonge vrouwen die op zoek zijn naar contact zonder verplichtingen. Deze dames weten wat ze willen: discreet afspreken, flirten en genieten van een gezellige of opwindende ontmoeting. Of je nu in een stad woont of op het platteland, er is altijd wel iemand bij jou in de buurt.</p><p>Brussel is de perfecte provincie voor lokale sexdates. Dankzij ons platform ontdek je eenvoudig welke singles klaar zijn voor een spannende chat of echte ontmoeting. De meeste vrouwen op onze site zijn tussen de 18 en 35 jaar en zoeken mannen voor leuke avonturen of meer. Alle profielen worden gecontroleerd voor jouw veiligheid.</p><p>Meld je gratis aan en begin vandaag nog met flirten. 18date.net brengt jou in contact met echte vrouwen die zin hebben in plezier en discretie waarderen. Ontdek nu wat Brussel te bieden heeft!</p>",
