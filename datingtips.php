@@ -6,13 +6,14 @@ $base = __DIR__;
 
         require_once $base . '/includes/utils.php';
 	
-        $tips = null;
+        $datingtip = 'datingtips';
         if(isset($_GET['item'])) {
-                $datingtip = strip_bad_chars( $_GET['item'] );
-                if (isset($datingtips[$datingtip])) {
-                        $tips = $datingtips[$datingtip];
+                $candidate = strip_bad_chars($_GET['item']);
+                if (isset($datingtips[$candidate])) {
+                        $datingtip = $candidate;
                 }
         }
+        $tips = $datingtips[$datingtip] ?? null;
 
         if (!$tips) {
                 header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
