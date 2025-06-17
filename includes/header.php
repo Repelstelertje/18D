@@ -1,9 +1,9 @@
 <?php
 
   $companyName = "18Date.net";
-  include('includes/nav_items.php');
+  include $base . '/includes/nav_items.php';
   // Config is required for API lookups when rendering profile pages
-  include_once('config.php');
+  include_once $base . '/config.php';
 
   /**
    * Convert a string to a URL friendly slug.
@@ -193,7 +193,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <?php
-            include('includes/nav.php');
+            include $base . '/includes/nav.php';
           ?>
         </div>
       </div>

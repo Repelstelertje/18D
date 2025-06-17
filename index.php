@@ -1,13 +1,14 @@
 <?php
+$base = __DIR__;
 	define("TITLE", "Home");
-    include('includes/arr_prov_nl.php');
-    include('includes/arr_prov_be.php');
-    include('includes/arr_prov_uk.php');
-    include('includes/arr_prov_de.php');
-    include('includes/arr_prov_at.php');
-    include('includes/arr_prov_ch.php');
-    include('includes/array_tips.php');
-    include('includes/header.php');
+    include $base . '/includes/arr_prov_nl.php';
+    include $base . '/includes/arr_prov_be.php';
+    include $base . '/includes/arr_prov_uk.php';
+    include $base . '/includes/arr_prov_de.php';
+    include $base . '/includes/arr_prov_at.php';
+    include $base . '/includes/arr_prov_ch.php';
+    include $base . '/includes/array_tips.php';
+    include $base . '/includes/header.php';
 ?>
 
 <div class="container">
@@ -228,4 +229,4 @@
       <a href="https://lustigesingles.com" target="_blank" class="m-0" title="LustigeSingles.com - Spaß & Liebe in Deiner Nähe heute!">LustigeSingles</a>
   </div>
 </div><!-- container -->
-<?php include('includes/footer.php'); ?>
+<?php include $base . '/includes/footer.php'; ?>

@@ -1,9 +1,10 @@
 <?php 
+$base = __DIR__;
 	define("TITLE", "Daten in");
 
-  include('includes/arr_prov_be.php');
+  include $base . '/includes/arr_prov_be.php';
 
-        require_once 'includes/utils.php';
+        require_once $base . '/includes/utils.php';
 	
         $provbe = null;
         if(isset($_GET['item'])) {
@@ -17,12 +18,12 @@
 
         if (!$provbe) {
                 header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-                include '404.php';
+                include $base . '/404.php';
                 exit;
         }
 
   $metaDescription = $provbe['info'];
-  include('includes/header.php');
+  include $base . '/includes/header.php';
 ?>
 	
 	<div class="container">
@@ -80,5 +81,5 @@
     </div>
   </div> <!-- container -->
 <?php
-	include('includes/footer.php');
+	include $base . '/includes/footer.php';
 ?>
