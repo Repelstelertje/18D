@@ -1,6 +1,7 @@
 <?php
+$base = __DIR__;
 	define("TITLE", "404 | Page not found");
-	include('includes/header.php');
+	include $base . '/includes/header.php';
 ?>
 
 <div class="container">
@@ -24,5 +25,5 @@
 	</div>
 </div>
 <?php
-	include('includes/footer.php');
+	include $base . '/includes/footer.php';
 ?>

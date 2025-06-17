@@ -1,9 +1,10 @@
 <?php 
+$base = __DIR__;
 	define("TITLE", "Datingtips");
 
-        include('includes/array_tips.php');
+        include $base . '/includes/array_tips.php';
 
-        require_once 'includes/utils.php';
+        require_once $base . '/includes/utils.php';
 	
         $tips = null;
         if(isset($_GET['item'])) {
@@ -15,12 +16,12 @@
 
         if (!$tips) {
                 header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-                include '404.php';
+                include $base . '/404.php';
                 exit;
         }
 
         $metaDescription = $tips['info'];
-        include('includes/header.php');
+        include $base . '/includes/header.php';
 ?>
 
 <div class="container">
@@ -32,4 +33,4 @@
 	</div>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php include $base . '/includes/footer.php'; ?>
