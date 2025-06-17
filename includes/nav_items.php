@@ -94,8 +94,8 @@ $navItemsCH = array(
 	array('slug' => 'sexdate-uri','title' => 'Uri'),        
 	array('slug' => 'sexdate-valais','title' => 'Valais'),        
 	array('slug' => 'sexdate-vaud','title' => 'Vaud'),        
-	array('slug' => 'sexdate-zug','title' => 'Zug'),        
-        array('slug' => 'sexdate-zurich','title' => 'Zürich'),
+	array('slug' => 'sexdate-zug','title' => 'Zug'),
+	array('slug' => 'sexdate-zurich','title' => 'Zürich'),
 );
 
 $navItemsTips = array(

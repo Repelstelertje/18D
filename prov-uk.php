@@ -1,10 +1,8 @@
 <?php
 $base = __DIR__;
-        define("TITLE", "Daten in");
-
-  include $base . '/includes/arr_prov_uk.php';
-
-        require_once $base . '/includes/utils.php';
+define("TITLE", "Daten in");
+include $base . '/includes/arr_prov_ch.php';
+require_once $base . '/includes/utils.php';
 
         $provuk = null;
         if(isset($_GET['item'])) {

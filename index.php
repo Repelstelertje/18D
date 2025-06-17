@@ -1,14 +1,14 @@
 <?php
 $base = __DIR__;
 	define("TITLE", "Home");
-    include $base . '/includes/arr_prov_nl.php';
-    include $base . '/includes/arr_prov_be.php';
-    include $base . '/includes/arr_prov_uk.php';
-    include $base . '/includes/arr_prov_de.php';
-    include $base . '/includes/arr_prov_at.php';
-    include $base . '/includes/arr_prov_ch.php';
-    include $base . '/includes/array_tips.php';
-    include $base . '/includes/header.php';
+  include $base . '/includes/arr_prov_nl.php';
+  include $base . '/includes/arr_prov_be.php';
+  include $base . '/includes/arr_prov_uk.php';
+  include $base . '/includes/arr_prov_de.php';
+  include $base . '/includes/arr_prov_at.php';
+  include $base . '/includes/arr_prov_ch.php';
+  include $base . '/includes/array_tips.php';
+  include $base . '/includes/header.php';
 ?>
 
 <div class="container">
@@ -81,7 +81,7 @@ $base = __DIR__;
     <p>Of je nou bewust op zoek bent naar een eenmalige sexdate of geregeld wil afspreken met dames voor een meerdere sexdates? Op <a href="index.php">18date.net</a> vind je <b>meer dan 10.000 single vrouwen die openstaan voor een sexdate</b>. Duizenden singles zijn op dit moment op zoek naar een sexdate, een sexpartner of meerdere sexdates. Van zoeken naar een sexdate binnen enkele dagen, gelijk sex bij jou in de buurt tot meerdere sexdates in een week. Bij <a href="index.php">18date.net</a> heb jij het snelst een sexdate in de BeNeLux! Kies in welk land jij wil zoeken naar een sexdate.</p>
   </div>
   <div id="top-banner"></div>
-  <h2 class="jumbotron text-center" id="nederland">Nederland</h2>
+  <h2 class="jumbotron text-center" id="nederland">Sexdate Nederland</h2>
   <div class="row text-center" id="keuze">
     <?php 
                               foreach ($nl as $provnl => $item) {
@@ -103,7 +103,7 @@ $base = __DIR__;
     ?>
   </div>
 
-  <h2 class="jumbotron text-center" id="belgie">België</h2>
+  <h2 class="jumbotron text-center" id="belgie">Sexdate België</h2>
   <div class="row text-center" id="keuze">
     <?php
       foreach ($be as $provbe => $item) {
@@ -124,7 +124,7 @@ $base = __DIR__;
       }
     ?>
   </div>
-  <h2 class="jumbotron text-center" id="uk">United Kingdom</h2>
+  <h2 class="jumbotron text-center" id="uk">Sexdate United Kingdom</h2>
   <div class="row text-center" id="keuze">
     <?php foreach ($uk as $provuk => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">
@@ -140,7 +140,7 @@ $base = __DIR__;
     </div>
     <?php } ?>
   </div>
-  <h2 class="jumbotron text-center" id="duitsland">Duitsland</h2>
+  <h2 class="jumbotron text-center" id="duitsland">Sexdate Duitsland</h2>
   <div class="row text-center" id="keuze">
     <?php foreach ($de as $provde => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">
@@ -156,7 +156,7 @@ $base = __DIR__;
     </div>
     <?php } ?>
   </div>
-  <h2 class="jumbotron text-center" id="oostenrijk">Oostenrijk</h2>
+  <h2 class="jumbotron text-center" id="oostenrijk">Sexdate Oostenrijk</h2>
   <div class="row text-center" id="keuze">
     <?php foreach ($at as $provat => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">
@@ -172,7 +172,7 @@ $base = __DIR__;
     </div>
     <?php } ?>
   </div>
-  <h2 class="jumbotron text-center" id="zwitserland">Zwitserland</h2>
+  <h2 class="jumbotron text-center" id="zwitserland">Sexdate Zwitserland</h2>
   <div class="row text-center" id="keuze">
     <?php foreach ($ch as $provch => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">

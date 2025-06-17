@@ -20,7 +20,7 @@ $base = __DIR__;
             foreach ($navItemsBE as $item2) {
                 echo "<a class=\"btn btn-primary\" href=\"$item2[slug]\" style=\"margin: 1px;\">$item2[title]</a>";
             }
-          ?>
+          	?>
         </div>
 	</div>
 </div>

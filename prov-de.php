@@ -1,10 +1,8 @@
 <?php
 $base = __DIR__;
-        define("TITLE", "Daten in");
-
-  include $base . '/includes/arr_prov_de.php';
-
-        require_once $base . '/includes/utils.php';
+define("TITLE", "Daten in");
+include $base . '/includes/arr_prov_ch.php';
+require_once $base . '/includes/utils.php';
 
         $provde = null;
         if(isset($_GET['item'])) {
@@ -80,3 +78,4 @@ $base = __DIR__;
 <?php
         include $base . '/includes/footer.php';
 ?>
+
