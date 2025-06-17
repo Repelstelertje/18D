@@ -3,10 +3,7 @@
 
   include('includes/arr_prov_at.php');
 
-        function strip_bad_chars( $input ) {
-                $output = preg_replace("/[^a-zA-Z0-9_-]/", "",$input);
-                return $output;
-        }
+        require_once 'includes/utils.php';
 
         $provat = null;
         if(isset($_GET['item'])) {
