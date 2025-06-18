@@ -4,23 +4,23 @@ define("TITLE", "Daten in");
 include $base . '/includes/arr_prov_ch.php';
 require_once $base . '/includes/utils.php';
 
-        $provch = null;
-        if(isset($_GET['item'])) {
-                $provincie = strip_bad_chars( $_GET['item'] );
-                $provincie = preg_replace('/^sexdate-/', '', $provincie);
-                if (isset($ch[$provincie])) {
-                        $provch = $ch[$provincie];
-                }
+$provch = null;
+if(isset($_GET['item'])) {
+        $provincie = strip_bad_chars( $_GET['item'] );
+        $provincie = preg_replace('/^sexdate-/', '', $provincie);
+        if (isset($ch[$provincie])) {
+                $provch = $ch[$provincie];
         }
+}
 
-        if (!$provch) {
-                header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-                include $base . '/404.php';
-                exit;
-        }
+if (!$provch) {
+        header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+        include $base . '/404.php';
+        exit;
+}
 
-  $metaDescription = $provch['info'];
-  include $base . '/includes/header.php';
+$metaDescription = $provch['info'];
+include $base . '/includes/header.php';
 ?>
 
 <div class="container">

@@ -8,7 +8,7 @@
     <li><a href="https://datingcontact.co.uk/" target="_blank" class="m-0">Dating Contact UK</a> - </li>
     <li><a href="https://datingnebenan.de/" target="_blank" class="m-0">Dating Nebenan</a> - </li>
     <li><a href="https://e-notifyer.nl/" target="_blank" class="m-0">E-notifyer</a> - </li>
-		<li><a href="partnerlinks" class="m-0">Meer partnerlinks...</a></li>
+    <li><a href="/partnerlinks.php" class="m-0">Meer partnerlinks...</a></li>
 	</ul>
   	<span class="sub-text">Copyright &copy; <?php echo date('Y'); ?> <?php echo $companyName; ?> | Vind hier jouw gratis sexdate!</span>
     <span class="policy-links sub-text"><a href="/privacy.php">Privacybeleid</a> | <a href="/cookie-policy.php">Cookiebeleid</a></span>

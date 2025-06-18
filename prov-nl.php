@@ -4,24 +4,24 @@ define("TITLE", "Daten in");
 include $base . '/includes/arr_prov_nl.php';
 require_once $base . '/includes/utils.php';
 	
-        $provnl = null;
-        if(isset($_GET['item'])) {
-                $provincie = strip_bad_chars( $_GET['item'] );
-                $provincie = preg_replace('/^sexdate-/', '', $provincie);
-                $provincie = preg_replace('/-nl$/', '', $provincie);
-                if (isset($nl[$provincie])) {
-                        $provnl = $nl[$provincie];
-                }
+$provnl = null;
+if(isset($_GET['item'])) {
+        $provincie = strip_bad_chars( $_GET['item'] );
+        $provincie = preg_replace('/^sexdate-/', '', $provincie);
+        $provincie = preg_replace('/-nl$/', '', $provincie);
+        if (isset($nl[$provincie])) {
+                $provnl = $nl[$provincie];
         }
+}
 
-        if (!$provnl) {
-                header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-                include $base . '/404.php';
-                exit;
-        }
+if (!$provnl) {
+        header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+        include $base . '/404.php';
+        exit;
+}
 
-  $metaDescription = $provnl['info'];
-  include $base . '/includes/header.php';
+$metaDescription = $provnl['info'];
+include $base . '/includes/header.php';
 ?>
 	
 <div class="container">

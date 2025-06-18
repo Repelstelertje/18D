@@ -1,31 +1,31 @@
 <?php 
 $base = __DIR__;
-        define("TITLE", "Datingtips");
+define("TITLE", "Datingtips");
 
-        $canonical = 'https://18date.net/datingtips';
-        $pageTitle = 'Datingtips | 18Date.net';
+$canonical = 'https://18date.net/datingtips';
+$pageTitle = 'Datingtips | 18Date.net';
 
-        include $base . '/includes/array_tips.php';
+include $base . '/includes/array_tips.php';
 
-        require_once $base . '/includes/utils.php';
-	
-        $datingtip = 'datingtips';
-        if(isset($_GET['item'])) {
-                $candidate = strip_bad_chars($_GET['item']);
-                if (isset($datingtips[$candidate])) {
-                        $datingtip = $candidate;
-                }
+require_once $base . '/includes/utils.php';
+
+$datingtip = 'datingtips';
+if(isset($_GET['item'])) {
+        $candidate = strip_bad_chars($_GET['item']);
+        if (isset($datingtips[$candidate])) {
+                $datingtip = $candidate;
         }
-        $tips = $datingtips[$datingtip] ?? null;
+}
+$tips = $datingtips[$datingtip] ?? null;
 
-        if (!$tips) {
-                header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-                include $base . '/404.php';
-                exit;
-        }
+if (!$tips) {
+        header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+        include $base . '/404.php';
+        exit;
+}
 
-        $metaDescription = $tips['info'];
-        include $base . '/includes/header.php';
+$metaDescription = $tips['info'];
+include $base . '/includes/header.php';
 ?>
 
 <div class="container">

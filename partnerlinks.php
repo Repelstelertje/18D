@@ -1,7 +1,7 @@
 <?php
 $base = __DIR__;
 define('TITLE', 'Partnerlinks');
-$canonical = 'https://18date.net/partnerlinks.php';
+$canonical = 'https://18date.net/partnerlinks';
 $pageTitle = 'Partnerlinks | 18Date.net';
 include $base . '/includes/header.php';
 include $base . '/includes/partner_links.php';
