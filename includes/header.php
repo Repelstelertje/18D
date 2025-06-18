@@ -65,9 +65,9 @@
 <meta name="theme-color" content="#ffffff">
 
 <?php
-  $canonical = 'https://18date.net';
-  $pageTitle = '18+ Sexdating | 18Date.net';
-  $ogImage = 'https://18date.net/img/fb.png';
+  $canonical = $canonical ?? 'https://18date.net';
+  $pageTitle = $pageTitle ?? '18+ Sexdating | 18Date.net';
+  $ogImage = $ogImage ?? 'https://18date.net/img/fb.png';
 
   if(isset($_GET['item'])){
     $item = filter_var($_GET['item'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -178,6 +178,10 @@
   echo '<meta property="og:title" content="' . htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') . '">';
   echo '<meta property="og:description" content="' . htmlspecialchars($description, ENT_QUOTES, 'UTF-8') . '">';
   echo '<meta property="og:image" content="' . $ogImage . '">';
+  echo '<meta name="twitter:card" content="summary_large_image">';
+  echo '<meta name="twitter:title" content="' . htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') . '">';
+  echo '<meta name="twitter:description" content="' . htmlspecialchars($description, ENT_QUOTES, 'UTF-8') . '">';
+  echo '<meta name="twitter:image" content="' . $ogImage . '">';
 ?>
 
 <!-- Bootstrap core CSS -->
