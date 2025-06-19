@@ -47,7 +47,7 @@ $nl = array(
         'title' => "Sexdate Limburg",
         'info' => "Benieuwd naar een sexdate in Limburg? Op 18date.net ontmoet je jonge vrouwen uit jouw regio die op zoek zijn naar spanning en discreet contact.",
         'tekst' => "<h2>Sexdate Limburg</h2><p>Woon jij in Limburg en zoek je een leuke vrouw voor een spannende date? Dan ben je bij 18date.net aan het juiste adres. Hier ontmoet je jonge vrouwen uit jouw provincie die op zoek zijn naar een serieuze flirt of een lekkere sexdate. Zonder gedoe, zonder verplichtingen. Gewoon eerlijk contact met mensen die net als jij op zoek zijn naar spanning, gezelligheid en misschien meer.</p><p>Of je nu uit een dorp of een grote stad komt, overal in Limburg zijn vrouwen actief op ons platform. Van casual chatten tot het plannen van een discrete ontmoeting, jij bepaalt zelf hoe ver je gaat. De profielen zijn echt en geverifieerd, dus je hoeft je geen zorgen te maken over nepprofielen of catfish. Jij hebt de controle.</p><p>Meld je nu gratis aan en ontdek vandaag nog wie er bij jou in Limburg openstaat voor contact. Begin met flirten, start een gesprek en wie weet heb jij binnenkort al je eerste sexdate. 100% anoniem en veilig.</p>",
-        'img' => "limburg"
+        'img' => "limburg-nl"
     ),
 
     "noord-brabant" => array(
