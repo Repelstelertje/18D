@@ -3,22 +3,22 @@ Options +FollowSymLinks
 RewriteEngine on
 
 # Provinces Netherlands
-RewriteRule ^(sexdate-drenthe|sexdate-flevoland|sexdate-friesland|sexdate-gelderland|sexdate-groningen|sexdate-limburg-nl|sexdate-noord-brabant|sexdate-noord-holland|sexdate-overijssel|sexdate-utrecht|sexdate-zeeland|sexdate-zuid-holland)/?$ prov-nl.php?item=$1 [L,QSA]
+RewriteRule ^(sexdate-drenthe|sexdate-flevoland|sexdate-friesland|sexdate-gelderland|sexdate-groningen|sexdate-limburg-nl|sexdate-noord-brabant|sexdate-noord-holland|sexdate-overijssel|sexdate-utrecht|sexdate-zeeland|sexdate-zuid-holland)/?$ province.php?country=nl&item=$1 [L,QSA]
 
 # Provinces Belgium
-RewriteRule ^(sexdate-antwerpen|sexdate-brussel|sexdate-henegouwen|sexdate-limburg-be|sexdate-luik|sexdate-luxemburg|sexdate-namen|sexdate-oost-vlaanderen|sexdate-vlaams-brabant|sexdate-waals-brabant|sexdate-west-vlaanderen)/?$ prov-be.php?item=$1 [L,QSA]
+RewriteRule ^(sexdate-antwerpen|sexdate-brussel|sexdate-henegouwen|sexdate-limburg-be|sexdate-luik|sexdate-luxemburg|sexdate-namen|sexdate-oost-vlaanderen|sexdate-vlaams-brabant|sexdate-waals-brabant|sexdate-west-vlaanderen)/?$ province.php?country=be&item=$1 [L,QSA]
 
 # Provinces United Kingdom
-RewriteRule ^(sexdate-east-midlands|sexdate-east-of-england|sexdate-london|sexdate-north-east-england|sexdate-north-west-england|sexdate-northern-ireland|sexdate-scotland|sexdate-south-east-england|sexdate-south-west-england|sexdate-wales|sexdate-west-midlands|sexdate-yorkshire-and-the-humber)/?$ prov-uk.php?item=$1 [L,QSA]
+RewriteRule ^(sexdate-east-midlands|sexdate-east-of-england|sexdate-london|sexdate-north-east-england|sexdate-north-west-england|sexdate-northern-ireland|sexdate-scotland|sexdate-south-east-england|sexdate-south-west-england|sexdate-wales|sexdate-west-midlands|sexdate-yorkshire-and-the-humber)/?$ province.php?country=uk&item=$1 [L,QSA]
 
 # Provinces Germany
-RewriteRule ^(sexdate-baden-wurttemberg|sexdate-bayern|sexdate-berlin|sexdate-brandenburg|sexdate-bremen|sexdate-hamburg|sexdate-hessen|sexdate-mecklenburg-vorpommern|sexdate-niedersachsen|sexdate-nordrhein-westfalen|sexdate-rheinland-pfalz|sexdate-saarland|sexdate-sachsen|sexdate-sachsen-anhalt|sexdate-schleswig-holstein|sexdate-thuringen)/?$ prov-de.php?item=$1 [L,QSA]
+RewriteRule ^(sexdate-baden-wurttemberg|sexdate-bayern|sexdate-berlin|sexdate-brandenburg|sexdate-bremen|sexdate-hamburg|sexdate-hessen|sexdate-mecklenburg-vorpommern|sexdate-niedersachsen|sexdate-nordrhein-westfalen|sexdate-rheinland-pfalz|sexdate-saarland|sexdate-sachsen|sexdate-sachsen-anhalt|sexdate-schleswig-holstein|sexdate-thuringen)/?$ province.php?country=de&item=$1 [L,QSA]
 
 # Provinces Austria
-RewriteRule ^(sexdate-burgenland|sexdate-karnten|sexdate-niederosterreich|sexdate-oberosterreich|sexdate-salzburg|sexdate-steiermark|sexdate-tirol|sexdate-vorarlberg|sexdate-wien)/?$ prov-at.php?item=$1 [L,QSA]
+RewriteRule ^(sexdate-burgenland|sexdate-karnten|sexdate-niederosterreich|sexdate-oberosterreich|sexdate-salzburg|sexdate-steiermark|sexdate-tirol|sexdate-vorarlberg|sexdate-wien)/?$ province.php?country=at&item=$1 [L,QSA]
 
 # Provinces Switzerland
-RewriteRule ^(sexdate-aargau|sexdate-appenzell|sexdate-basel-land|sexdate-basel-stadt|sexdate-bern|sexdate-fribourg|sexdate-geneve|sexdate-glarus|sexdate-graubunden|sexdate-jura|sexdate-luzern|sexdate-neuchatel|sexdate-nidwalden|sexdate-obwalden|sexdate-schaffhausen|sexdate-schwyz|sexdate-solothurn|sexdate-st-gallen|sexdate-thurgau|sexdate-ticino|sexdate-uri|sexdate-valais|sexdate-vaud|sexdate-zug|sexdate-zurich)/?$ prov-ch.php?item=$1 [L,QSA]
+RewriteRule ^(sexdate-aargau|sexdate-appenzell|sexdate-basel-land|sexdate-basel-stadt|sexdate-bern|sexdate-fribourg|sexdate-geneve|sexdate-glarus|sexdate-graubunden|sexdate-jura|sexdate-luzern|sexdate-neuchatel|sexdate-nidwalden|sexdate-obwalden|sexdate-schaffhausen|sexdate-schwyz|sexdate-solothurn|sexdate-st-gallen|sexdate-thurgau|sexdate-ticino|sexdate-uri|sexdate-valais|sexdate-vaud|sexdate-zug|sexdate-zurich)/?$ province.php?country=ch&item=$1 [L,QSA]
 
 # Datingtips
 RewriteRule ^datingtips/?$ datingtips.php?item=datingtips [L,QSA]
