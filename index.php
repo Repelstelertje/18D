@@ -5,71 +5,73 @@ $base = __DIR__;
 ?>
 
 <div class="container">
-  <!-- Jumbotron Header -->
-  <div class="jumbotron my-4 text-center">
-    <h1>18Date.net - Vind hier jouw gratis sexdate!</h1>
-    <hr>
-    <h2>Zoek hier vrouwen bij jou in buurt!</h2>
-    <div class="button-area">
-      <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nederland</a>
-      <div class="dropdown-menu" aria-labelledby="provDropdown">
-        <?php
-          foreach ($navItemsNL as $item) {
-              echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-          }
-        ?>
-      </div>
-    </div>
-    <div class="button-area">
-      <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">België</a>
-      <div class="dropdown-menu" aria-labelledby="provDropdown">
-        <?php
-          foreach ($navItemsBE as $item) {
-              echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-          }
-        ?>
-      </div>
-    </div>
-    <div class="button-area">
-      <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UK</a>
-      <div class="dropdown-menu" aria-labelledby="provDropdown">
-        <?php
-          foreach ($navItemsUK as $item) {
-              echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-          }
-        ?>
-      </div>
-    </div>
-    <div class="button-area">
-      <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Duitsland</a>
-      <div class="dropdown-menu" aria-labelledby="provDropdown">
-        <?php
-          foreach ($navItemsDE as $item) {
-              echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-          }
-        ?>
-      </div>
-    </div>
-    <div class="button-area">
-      <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oostenrijk</a>
-      <div class="dropdown-menu" aria-labelledby="provDropdown">
-        <?php
-          foreach ($navItemsAT as $item) {
-              echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-          }
-        ?>
-      </div>
-    </div>
-    <div class="button-area">
-      <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zwitserland</a>
-      <div class="dropdown-menu" aria-labelledby="provDropdown">
-        <?php
-          foreach ($navItemsCH as $item) {
-              echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-          }
-        ?>
+    <!-- Jumbotron Header -->
+    <div class="jumbotron my-4 text-center">
+        <h1>18Date.net - Vind hier jouw gratis sexdate!</h1>
+        <hr>
+        <h2>Zoek hier vrouwen bij jou in buurt!</h2>
+        <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nederland</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+            <?php
+            foreach ($navItemsNL as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+            ?>
         </div>
-<div class="jumbotron jumbotron-sm text-center">
+        </div>
+        <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">België</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+            <?php
+            foreach ($navItemsBE as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+            ?>
+        </div>
+        </div>
+        <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UK</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+            <?php
+            foreach ($navItemsUK as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+            ?>
+        </div>
+        </div>
+        <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Duitsland</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+            <?php
+            foreach ($navItemsDE as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+            ?>
+        </div>
+        </div>
+        <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oostenrijk</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+            <?php
+            foreach ($navItemsAT as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+            ?>
+        </div>
+        </div>
+        <div class="button-area">
+        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zwitserland</a>
+        <div class="dropdown-menu" aria-labelledby="provDropdown">
+            <?php
+            foreach ($navItemsCH as $item) {
+                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+            }
+            ?>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-sm text-center">
         <h2>Nieuwste leden Nederland op zoek naar een sexdate!</h2>
     </div>
     <div class="row" v-cloak>
