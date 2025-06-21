@@ -30,7 +30,7 @@ include $base . '/includes/header.php';
 			<hr>
 			<p><?php echo $provbe['info']; ?></p>
 		</div>
-		<div class="row" v-cloak>
+                <div class="row" id="oproepjes-list" v-cloak>
       <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
         <div class="card h-100">
           <a :href="'profile.php?country=be&id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Flevoland'" @error="imgError"></a>
@@ -49,7 +49,9 @@ include $base . '/includes/header.php';
         </div>
       </div>
       <script>
-        var api_url= "<?= api_base('be'); ?>/profile/province_age/be/<?= rawurlencode($provbe['name']); ?>/18/45/120/S";
+        window.addEventListener('load', function(){
+            createOproepjes('#oproepjes-list', "<?= api_base('be'); ?>/profile/province_age/be/<?= rawurlencode($provbe['name']); ?>/18/45/120/S");
+        });
       </script>
     </div><!-- /.row -->
     <!-- Pagination -->
