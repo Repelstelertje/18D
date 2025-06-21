@@ -1,2 +1,10 @@
 node_modules
 php_errorlog
+
+# OS-specific artifacts
+.DS_Store
+.ftpquota
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+._*
