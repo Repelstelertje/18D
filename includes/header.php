@@ -107,18 +107,8 @@
       $item = preg_replace('/^sexdate-/', '', $item);
       $canonical = 'https://18date.net/sexdate-' . $item;
       $pageTitle = 'Sexdate ' . $item . ' | 18Date.net';
-      if(isset($provnl['img'])){
-        $ogImage = 'https://18date.net/img/front/' . $provnl['img'] . '.jpg';
-      } elseif(isset($provbe['img'])){
-        $ogImage = 'https://18date.net/img/front/' . $provbe['img'] . '.jpg';
-      } elseif(isset($provuk['img'])){
-        $ogImage = 'https://18date.net/img/front/' . $provuk['img'] . '.jpg';
-      } elseif(isset($provde['img'])){
-        $ogImage = 'https://18date.net/img/front/' . $provde['img'] . '.jpg';
-      } elseif(isset($provat['img'])){
-        $ogImage = 'https://18date.net/img/front/' . $provat['img'] . '.jpg';
-      } elseif(isset($provch['img'])){
-        $ogImage = 'https://18date.net/img/front/' . $provch['img'] . '.jpg';
+      if(isset($province['img'])){
+        $ogImage = 'https://18date.net/img/front/' . $province['img'] . '.jpg';
       }
     }
   } elseif(isset($_GET['id'])){
