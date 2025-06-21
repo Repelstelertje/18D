@@ -93,7 +93,7 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('nl'); ?>/profile/latest/nl";
+            var api_url= "<?= api_base('nl'); ?>/profile/banner9/120";
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -132,7 +132,7 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('be'); ?>/profile/latest/be";
+            var api_url= "<?= api_base('be'); ?>/profile/banner9/120";
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -171,7 +171,7 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('uk'); ?>/profile/latest/uk";
+            var api_url= "<?= api_base('uk'); ?>/profile/banner9/120";
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -210,7 +210,7 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('de'); ?>/profile/latest/de";
+            var api_url= "<?= api_base('de'); ?>/profile/banner9/120";
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -249,7 +249,7 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('at'); ?>/profile/latest/at";
+            var api_url= "<?= api_base('at'); ?>/profile/banner9/120";
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -288,7 +288,7 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('ch'); ?>/profile/latest/ch";
+            var api_url= "<?= api_base('ch'); ?>/profile/banner9/120";
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
