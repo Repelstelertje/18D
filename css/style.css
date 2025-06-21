@@ -162,6 +162,13 @@ hr {
     justify-content: center;
 }
 
+/* Ensure the pagination nav stretches across the row */
+.nav-pag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .page-item.active .page-link {
 	background-color: #ff1c90;
     border-color: #eee;
