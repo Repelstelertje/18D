@@ -6,6 +6,10 @@
 [v-cloak] {
   display: none;
 }
+html {
+  /* Offset scrolling to account for fixed header */
+  scroll-padding-top: 56px;
+}
 body {
   padding-top: 56px;
   background-image: linear-gradient(to right, #e5c6ee, #fbf7fc, #e5c6ee);
@@ -97,13 +101,18 @@ hr {
 }
 
 .jumbotron {
-	padding: 1rem;
-	background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+}
+.jumbotron[id^="land-"],
+.country-section {
+        /* Prevent fixed header from covering anchors */
+        scroll-margin-top: 56px;
 }
 .align-center {
-	display: block;
-	margin: 0px auto;
-	width: 100%;
+        display: block;
+        margin: 0px auto;
+        width: 100%;
 }
 #top-banner, #footer-banner {
 	margin: 20px auto;
