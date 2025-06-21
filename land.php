@@ -63,7 +63,7 @@ $data = [
 $info = $data[$country];
 
 include $base . $info['file'];
-$provArray = $$info['var'];
+$provArray = ${$info['var']};
 
 $canonical = $info['canonical'];
 $pageTitle = $info['pageTitle'];
