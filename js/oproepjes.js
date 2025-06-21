@@ -69,8 +69,16 @@ function createOproepjes(el, apiUrl){
             } else {
                 this.page= page;
             }
-            
-            
+
+            var el = this.$el;
+            this.$nextTick(function(){
+                if (el && typeof el.scrollIntoView === 'function') {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+
         },
         imgError: function(event){
             event.target.src = 'img/fallback.svg';
