@@ -73,7 +73,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center" id="land-be">
+    <div class="jumbotron jumbotron-sm text-center" id="land-be">
         <h2>Nieuwste leden België op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-be" v-cloak>
@@ -117,7 +117,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center" id="land-uk">
+    <div class="jumbotron jumbotron-sm text-center" id="land-uk">
         <h2>Nieuwste leden United Kingdom op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-uk" v-cloak>
@@ -161,7 +161,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center" id="land-de">
+    <div class="jumbotron jumbotron-sm text-center" id="land-de">
         <h2>Nieuwste leden Duitsland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-de" v-cloak>
@@ -205,7 +205,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center" id="land-at">
+    <div class="jumbotron jumbotron-sm text-center" id="land-at">
         <h2>Nieuwste leden Oostenrijk op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-at" v-cloak>
@@ -249,7 +249,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center" id="land-ch">
+    <div class="jumbotron jumbotron-sm text-center" id="land-ch">
         <h2>Nieuwste leden Zwitserland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-ch" v-cloak>
