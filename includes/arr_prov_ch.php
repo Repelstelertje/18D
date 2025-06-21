@@ -203,3 +203,12 @@ $ch = array(
     ),
 
 );
+
+// Land CH
+$chLand = array(
+    'name'  => 'Zwitserland',
+    'title' => 'Sexdate Zwitserland',
+    'info'  => '',
+    'tekst' => '',
+    'img'   => 'zwitserland'
+);

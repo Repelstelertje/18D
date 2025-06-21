@@ -99,3 +99,12 @@ $uk = array(
     ),
 
 );
+
+// Land UK
+$ukLand = array(
+    'name'  => 'United Kingdom',
+    'title' => 'Sexdate United Kingdom',
+    'info'  => '',
+    'tekst' => '',
+    'img'   => 'uk'
+);

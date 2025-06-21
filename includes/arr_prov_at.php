@@ -75,3 +75,12 @@ $at = array(
     ),
 
 );
+
+// Land AT
+$atLand = array(
+    'name'  => 'Oostenrijk',
+    'title' => 'Sexdate Oostenrijk',
+    'info'  => '',
+    'tekst' => '',
+    'img'   => 'oostenrijk'
+);

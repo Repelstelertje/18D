@@ -13,6 +13,7 @@ $data = [
     'nl' => [
         'file' => '/includes/arr_prov_nl.php',
         'var' => 'nl',
+        'landVar' => 'nlLand',
         'title' => 'Sexdate Nederland',
         'canonical' => 'https://18date.net/sexdate-nederland',
         'pageTitle' => 'Sexdate Nederland | 18Date.net',
@@ -21,6 +22,7 @@ $data = [
     'be' => [
         'file' => '/includes/arr_prov_be.php',
         'var' => 'be',
+        'landVar' => 'beLand',
         'title' => 'Sexdate België',
         'canonical' => 'https://18date.net/sexdate-belgie',
         'pageTitle' => 'Sexdate België | 18Date.net',
@@ -29,6 +31,7 @@ $data = [
     'uk' => [
         'file' => '/includes/arr_prov_uk.php',
         'var' => 'uk',
+        'landVar' => 'ukLand',
         'title' => 'Sexdate United Kingdom',
         'canonical' => 'https://18date.net/sexdate-verenigd-koninkrijk',
         'pageTitle' => 'Sexdate United Kingdom | 18Date.net',
@@ -37,6 +40,7 @@ $data = [
     'de' => [
         'file' => '/includes/arr_prov_de.php',
         'var' => 'de',
+        'landVar' => 'deLand',
         'title' => 'Sexdate Duitsland',
         'canonical' => 'https://18date.net/sexdate-duitsland',
         'pageTitle' => 'Sexdate Duitsland | 18Date.net',
@@ -45,6 +49,7 @@ $data = [
     'at' => [
         'file' => '/includes/arr_prov_at.php',
         'var' => 'at',
+        'landVar' => 'atLand',
         'title' => 'Sexdate Oostenrijk',
         'canonical' => 'https://18date.net/sexdate-oostenrijk',
         'pageTitle' => 'Sexdate Oostenrijk | 18Date.net',
@@ -53,6 +58,7 @@ $data = [
     'ch' => [
         'file' => '/includes/arr_prov_ch.php',
         'var' => 'ch',
+        'landVar' => 'chLand',
         'title' => 'Sexdate Zwitserland',
         'canonical' => 'https://18date.net/sexdate-zwitserland',
         'pageTitle' => 'Sexdate Zwitserland | 18Date.net',
@@ -64,16 +70,22 @@ $info = $data[$country];
 
 include $base . $info['file'];
 $provArray = ${$info['var']};
+$landInfo = ${$info['landVar']};
 
 $canonical = $info['canonical'];
 $pageTitle = $info['pageTitle'];
 define('TITLE', $info['title']);
+$metaDescription = $landInfo['info'];
 
 include $base . '/includes/header.php';
 ?>
 <div class="container">
-  <h2 class="jumbotron text-center" id="<?php echo $info['id']; ?>"><?php echo $info['title']; ?></h2>
-  <div class="row text-center" id="keuze">
+    <div class="jumbotron my-4" id="<?php echo $info['id']; ?>">
+        <h1 class="text-center"><?php echo $landInfo['title']; ?></h1>
+        <hr>
+        <p><?php echo $landInfo['info']; ?></p>
+    </div>
+    <div class="row text-center" id="keuze">
     <?php
       foreach ($provArray as $slugKey => $item) {
           $slug = 'sexdate-' . $slugKey;
@@ -93,7 +105,10 @@ include $base . '/includes/header.php';
       </div>
     </div>
     <?php } ?>
-  </div>
+    </div>
+    <div class="jumbotron">
+        <?php echo $landInfo['tekst']; ?>
+    </div>
 </div><!-- container -->
 <?php include $base . '/includes/footer.php'; ?>
 
