@@ -50,7 +50,7 @@ include $base . '/includes/header.php';
     <div class="jumbotron my-4">
         <h1 class="text-center"><?php echo $province['title']; ?></h1>
         <hr>
-        <p><?php echo $province['meta']; ?></p>
+        <p><?php echo $province['intro']; ?></p>
     </div>
     <div class="row" id="oproepjes-list" v-cloak>
         <div class="col-12" v-if="dataError">

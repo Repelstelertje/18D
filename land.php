@@ -83,7 +83,7 @@ include $base . '/includes/header.php';
     <div class="jumbotron my-4" id="<?php echo $info['id']; ?>">
         <h1 class="text-center"><?php echo $landInfo['title']; ?></h1>
         <hr>
-        <p><?php echo $landInfo['meta']; ?></p>
+        <p><?php echo $landInfo['intro']; ?></p>
     </div>
     <div class="row text-center" id="keuze">
     <?php
