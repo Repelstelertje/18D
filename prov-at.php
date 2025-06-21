@@ -29,7 +29,7 @@ require_once $base . '/includes/utils.php';
         <hr>
         <p><?php echo $provat['info']; ?></p>
     </div>
-    <div class="row" v-cloak>
+    <div class="row" id="oproepjes-list" v-cloak>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
         <div class="card h-100">
             <a :href="'profile.php?country=at&id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name" @error="imgError"></a>
@@ -48,7 +48,9 @@ require_once $base . '/includes/utils.php';
         </div>  
     </div><!-- /.row -->
     <script>
-        var api_url= "<?= api_base('at'); ?>/profile/province_age/at/<?= rawurlencode($provat['name']); ?>/18/45/120/S";
+        window.addEventListener('load', function(){
+            createOproepjes('#oproepjes-list', "<?= api_base('at'); ?>/profile/province_age/at/<?= rawurlencode($provat['name']); ?>/18/45/120/S");
+        });
     </script>
 
     <!-- Pagination -->

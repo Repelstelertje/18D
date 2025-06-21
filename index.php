@@ -74,7 +74,7 @@ $base = __DIR__;
     <div class="jumbotron jumbotron-sm text-center">
         <h2>Nieuwste leden Nederland op zoek naar een sexdate!</h2>
     </div>
-    <div class="row" v-cloak>
+    <div class="row country-section" id="oproepjes-nl" v-cloak>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Nederland'" @error="imgError"></a>
@@ -93,7 +93,9 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('nl'); ?>/profile/banner9/120";
+            window.addEventListener('load', function(){
+                createOproepjes('#oproepjes-nl', "<?= api_base('nl'); ?>/profile/banner9/120");
+            });
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -113,7 +115,7 @@ $base = __DIR__;
 <div class="jumbotron jumbotron-sm text-center">
         <h2>Nieuwste leden België op zoek naar een sexdate!</h2>
     </div>
-    <div class="row" v-cloak>
+    <div class="row country-section" id="oproepjes-be" v-cloak>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in België'" @error="imgError"></a>
@@ -132,7 +134,9 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('be'); ?>/profile/banner9/120";
+            window.addEventListener('load', function(){
+                createOproepjes('#oproepjes-be', "<?= api_base('be'); ?>/profile/banner9/120");
+            });
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -152,7 +156,7 @@ $base = __DIR__;
 <div class="jumbotron jumbotron-sm text-center">
         <h2>Nieuwste leden United Kingdom op zoek naar een sexdate!</h2>
     </div>
-    <div class="row" v-cloak>
+    <div class="row country-section" id="oproepjes-uk" v-cloak>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in United Kingdom'" @error="imgError"></a>
@@ -171,7 +175,9 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('uk'); ?>/profile/banner9/120";
+            window.addEventListener('load', function(){
+                createOproepjes('#oproepjes-uk', "<?= api_base('uk'); ?>/profile/banner9/120");
+            });
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -191,7 +197,7 @@ $base = __DIR__;
 <div class="jumbotron jumbotron-sm text-center">
         <h2>Nieuwste leden Duitsland op zoek naar een sexdate!</h2>
     </div>
-    <div class="row" v-cloak>
+    <div class="row country-section" id="oproepjes-de" v-cloak>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Duitsland'" @error="imgError"></a>
@@ -210,7 +216,9 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('de'); ?>/profile/banner9/120";
+            window.addEventListener('load', function(){
+                createOproepjes('#oproepjes-de', "<?= api_base('de'); ?>/profile/banner9/120");
+            });
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -230,7 +238,7 @@ $base = __DIR__;
 <div class="jumbotron jumbotron-sm text-center">
         <h2>Nieuwste leden Oostenrijk op zoek naar een sexdate!</h2>
     </div>
-    <div class="row" v-cloak>
+    <div class="row country-section" id="oproepjes-at" v-cloak>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Oostenrijk'" @error="imgError"></a>
@@ -249,7 +257,9 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('at'); ?>/profile/banner9/120";
+            window.addEventListener('load', function(){
+                createOproepjes('#oproepjes-at', "<?= api_base('at'); ?>/profile/banner9/120");
+            });
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
@@ -269,7 +279,7 @@ $base = __DIR__;
 <div class="jumbotron jumbotron-sm text-center">
         <h2>Nieuwste leden Zwitserland op zoek naar een sexdate!</h2>
     </div>
-    <div class="row" v-cloak>
+    <div class="row country-section" id="oproepjes-ch" v-cloak>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Zwitserland'" @error="imgError"></a>
@@ -288,7 +298,9 @@ $base = __DIR__;
             </div>
         </div>
         <script>
-            var api_url= "<?= api_base('ch'); ?>/profile/banner9/120";
+            window.addEventListener('load', function(){
+                createOproepjes('#oproepjes-ch', "<?= api_base('ch'); ?>/profile/banner9/120");
+            });
         </script>
         <!-- Pagination -->
         <nav class="nav-pag" aria-label="Page navigation">
