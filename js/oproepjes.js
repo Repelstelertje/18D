@@ -1,3 +1,12 @@
+function slugify(str){
+    return str.toString().toLowerCase()
+        .replace(/\s+/g,'-')
+        .replace(/[^\w-]+/g,'')
+        .replace(/--+/g,'-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
+}
+
 var oproepjes= new Vue({
     el: "#oproepjes",
     created: function(){
