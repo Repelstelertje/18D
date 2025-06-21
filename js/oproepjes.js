@@ -74,10 +74,6 @@ function createOproepjes(el, apiUrl){
             this.$nextTick(function(){
                 if (el && typeof el.scrollIntoView === 'function') {
                     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    var nav = document.querySelector('.navbar.fixed-top');
-                    if (nav) {
-                        window.scrollBy(0, -nav.offsetHeight);
-                    }
                 } else {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
