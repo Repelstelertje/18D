@@ -11,67 +11,25 @@ $base = __DIR__;
         <hr>
         <h2>Zoek hier vrouwen bij jou in buurt!</h2>
         <div class="button-area">
-        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nederland</a>
-        <div class="dropdown-menu" aria-labelledby="provDropdown">
-            <?php
-            foreach ($navItemsNL as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-            }
-            ?>
-        </div>
+        <a class="btn btn-primary" href="#land-nl">Nederland</a>
         </div>
         <div class="button-area">
-        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">België</a>
-        <div class="dropdown-menu" aria-labelledby="provDropdown">
-            <?php
-            foreach ($navItemsBE as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-            }
-            ?>
-        </div>
+        <a class="btn btn-primary" href="#land-be">België</a>
         </div>
         <div class="button-area">
-        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UK</a>
-        <div class="dropdown-menu" aria-labelledby="provDropdown">
-            <?php
-            foreach ($navItemsUK as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-            }
-            ?>
-        </div>
+        <a class="btn btn-primary" href="#land-uk">UK</a>
         </div>
         <div class="button-area">
-        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Duitsland</a>
-        <div class="dropdown-menu" aria-labelledby="provDropdown">
-            <?php
-            foreach ($navItemsDE as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-            }
-            ?>
-        </div>
+        <a class="btn btn-primary" href="#land-de">Duitsland</a>
         </div>
         <div class="button-area">
-        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oostenrijk</a>
-        <div class="dropdown-menu" aria-labelledby="provDropdown">
-            <?php
-            foreach ($navItemsAT as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-            }
-            ?>
-        </div>
+        <a class="btn btn-primary" href="#land-at">Oostenrijk</a>
         </div>
         <div class="button-area">
-        <a class="dropdown-toggle btn btn-primary" href="#" id="provDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zwitserland</a>
-        <div class="dropdown-menu" aria-labelledby="provDropdown">
-            <?php
-            foreach ($navItemsCH as $item) {
-                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
-            }
-            ?>
-            </div>
+        <a class="btn btn-primary" href="#land-ch">Zwitserland</a>
         </div>
     </div>
-    <div class="jumbotron jumbotron-sm text-center">
+    <div class="jumbotron jumbotron-sm text-center" id="land-nl">
         <h2>Nieuwste leden Nederland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-nl" v-cloak>
@@ -115,7 +73,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center">
+<div class="jumbotron jumbotron-sm text-center" id="land-be">
         <h2>Nieuwste leden België op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-be" v-cloak>
@@ -159,7 +117,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center">
+<div class="jumbotron jumbotron-sm text-center" id="land-uk">
         <h2>Nieuwste leden United Kingdom op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-uk" v-cloak>
@@ -203,7 +161,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center">
+<div class="jumbotron jumbotron-sm text-center" id="land-de">
         <h2>Nieuwste leden Duitsland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-de" v-cloak>
@@ -247,7 +205,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center">
+<div class="jumbotron jumbotron-sm text-center" id="land-at">
         <h2>Nieuwste leden Oostenrijk op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-at" v-cloak>
@@ -291,7 +249,7 @@ $base = __DIR__;
             </ul>
         </nav>
     </div><!-- /.row -->
-<div class="jumbotron jumbotron-sm text-center">
+<div class="jumbotron jumbotron-sm text-center" id="land-ch">
         <h2>Nieuwste leden Zwitserland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-ch" v-cloak>
