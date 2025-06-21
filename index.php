@@ -75,6 +75,9 @@ $base = __DIR__;
         <h2>Nieuwste leden Nederland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-nl" v-cloak>
+        <div class="col-12" v-if="dataError">
+            <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
+        </div>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Nederland'" @error="imgError"></a>
@@ -116,6 +119,9 @@ $base = __DIR__;
         <h2>Nieuwste leden België op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-be" v-cloak>
+        <div class="col-12" v-if="dataError">
+            <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
+        </div>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in België'" @error="imgError"></a>
@@ -157,6 +163,9 @@ $base = __DIR__;
         <h2>Nieuwste leden United Kingdom op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-uk" v-cloak>
+        <div class="col-12" v-if="dataError">
+            <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
+        </div>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in United Kingdom'" @error="imgError"></a>
@@ -198,6 +207,9 @@ $base = __DIR__;
         <h2>Nieuwste leden Duitsland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-de" v-cloak>
+        <div class="col-12" v-if="dataError">
+            <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
+        </div>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Duitsland'" @error="imgError"></a>
@@ -239,6 +251,9 @@ $base = __DIR__;
         <h2>Nieuwste leden Oostenrijk op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-at" v-cloak>
+        <div class="col-12" v-if="dataError">
+            <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
+        </div>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Oostenrijk'" @error="imgError"></a>
@@ -280,6 +295,9 @@ $base = __DIR__;
         <h2>Nieuwste leden Zwitserland op zoek naar een sexdate!</h2>
     </div>
     <div class="row country-section" id="oproepjes-ch" v-cloak>
+        <div class="col-12" v-if="dataError">
+            <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
+        </div>
         <div class="col-lg-3 col-md-6 mb-4 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
             <div class="card h-100">
                 <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Zwitserland'" @error="imgError"></a>

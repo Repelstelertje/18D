@@ -30,6 +30,9 @@ include $base . '/includes/header.php';
         <p><?php echo $provuk['info']; ?></p>
     </div>
     <div class="row" id="oproepjes-list" v-cloak>
+        <div class="col-12" v-if="dataError">
+            <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
+        </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
         <div class="card h-100">
             <a :href="'profile.php?country=uk&id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name" @error="imgError"></a>
