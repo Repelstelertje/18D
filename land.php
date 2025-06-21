@@ -75,7 +75,7 @@ $landInfo = ${$info['landVar']};
 $canonical = $info['canonical'];
 $pageTitle = $info['pageTitle'];
 define('TITLE', $info['title']);
-$metaDescription = $landInfo['info'];
+$metaDescription = $landInfo['meta'];
 
 include $base . '/includes/header.php';
 ?>
@@ -83,7 +83,7 @@ include $base . '/includes/header.php';
     <div class="jumbotron my-4" id="<?php echo $info['id']; ?>">
         <h1 class="text-center"><?php echo $landInfo['title']; ?></h1>
         <hr>
-        <p><?php echo $landInfo['info']; ?></p>
+        <p><?php echo $landInfo['meta']; ?></p>
     </div>
     <div class="row text-center" id="keuze">
     <?php
@@ -99,7 +99,7 @@ include $base . '/includes/header.php';
         <div class="card-body">
           <a href="<?php echo $slug; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
           <hr>
-          <p class="card-text"><?php echo $item['info']; ?></p>
+          <p class="card-text"><?php echo $item['meta']; ?></p>
         </div>
         <a href="<?php echo $slug; ?>" class="card-footer btn btn-primary">Sexdate <?php echo $item['name']; ?></a>
       </div>
