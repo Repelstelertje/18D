@@ -30,12 +30,12 @@ RewriteRule ^datingtips-oostenrijk/?$ datingtips.php?item=at [L,QSA]
 RewriteRule ^datingtips-zwitserland/?$ datingtips.php?item=ch [L,QSA]
 
 # Country pages
-RewriteRule ^sexdate-nederland/?$ nederland.php [L,QSA]
-RewriteRule ^sexdate-belgie/?$ belgie.php [L,QSA]
-RewriteRule ^sexdate-verenigd-koninkrijk/?$ verenigd-koninkrijk.php [L,QSA]
-RewriteRule ^sexdate-duitsland/?$ duitsland.php [L,QSA]
-RewriteRule ^sexdate-oostenrijk/?$ oostenrijk.php [L,QSA]
-RewriteRule ^sexdate-zwitserland/?$ zwitserland.php [L,QSA]
+RewriteRule ^sexdate-nederland/?$ land.php?country=nl [L,QSA]
+RewriteRule ^sexdate-belgie/?$ land.php?country=be [L,QSA]
+RewriteRule ^sexdate-verenigd-koninkrijk/?$ land.php?country=uk [L,QSA]
+RewriteRule ^sexdate-duitsland/?$ land.php?country=de [L,QSA]
+RewriteRule ^sexdate-oostenrijk/?$ land.php?country=at [L,QSA]
+RewriteRule ^sexdate-zwitserland/?$ land.php?country=ch [L,QSA]
 
 # Profile slugs
 RewriteRule ^shemale-([a-z0-9-]+)/?$ profile.php?slug=$1 [L,QSA]
