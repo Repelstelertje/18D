@@ -34,7 +34,7 @@ include $base . '/includes/header.php';
         <div class="col-12" v-if="dataError">
             <div class="alert alert-warning data-error">Profieldata kon niet geladen worden.</div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item profile-card" :id="'profile-' + profile.id" v-for="profile in filtered_profiles">
         <div class="card h-100">
             <a :href="'profile.php?country=nl&id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name + ' daten in Flevoland'" @error="imgError"></a>
             <div class="card-body">
