@@ -17,7 +17,8 @@ function createOproepjes(el, apiUrl){
             profiles: [],
             page: 1,
             ppp: 20,    //profiles per page
-            api_url: apiUrl
+            api_url: apiUrl,
+            dataError: false
         },
     computed: {
         filtered_profiles: function(){
@@ -52,10 +53,12 @@ function createOproepjes(el, apiUrl){
                         });
                     } else {
                         console.error('Invalid profile data', response.data);
+                        that.dataError = true;
                     }
                 })
                 .catch(function (error) {
-                    console.log(error);
+                    console.error(error);
+                    that.dataError = true;
                 });
         },
         set_page_number: function(page){

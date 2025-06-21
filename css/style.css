@@ -231,3 +231,8 @@ footer {
 .addthis_inline_follow_toolbox {
     margin-top: -5px;
 }
+
+/* Alert shown when profile data fails to load */
+.alert.data-error {
+    text-align: center;
+}
