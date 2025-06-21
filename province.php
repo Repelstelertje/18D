@@ -42,7 +42,7 @@ if (!$province) {
     exit;
 }
 
-$metaDescription = $province['info'];
+$metaDescription = $province['meta'];
 include $base . '/includes/header.php';
 ?>
 
@@ -50,7 +50,7 @@ include $base . '/includes/header.php';
     <div class="jumbotron my-4">
         <h1 class="text-center"><?php echo $province['title']; ?></h1>
         <hr>
-        <p><?php echo $province['info']; ?></p>
+        <p><?php echo $province['meta']; ?></p>
     </div>
     <div class="row" id="oproepjes-list" v-cloak>
         <div class="col-12" v-if="dataError">

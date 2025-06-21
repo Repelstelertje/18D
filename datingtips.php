@@ -24,7 +24,7 @@ if (!$tips) {
         exit;
 }
 
-$metaDescription = $tips['info'];
+$metaDescription = $tips['meta'];
 include $base . '/includes/header.php';
 ?>
 
