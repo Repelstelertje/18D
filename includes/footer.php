@@ -25,7 +25,8 @@
       <button type="button" id="cookie-accept-all" style="background-color: #28a745; color: white; border: none; padding: 10px 15px; cursor: pointer;">Accept all</button>
     </form>
   </div>
-</div>
+  </div>
+</main>
 </div> <!-- /.oproepjes -->
 <script src="js/vendor/vue.2.5.13.min.js"></script>
 <script src="js/vendor/axios.0.17.1.min.js"></script>
