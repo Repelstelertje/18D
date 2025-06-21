@@ -131,3 +131,12 @@ $de = array(
     ),
 
 );
+
+// Land DE
+$deLand = array(
+    'name'  => 'Duitsland',
+    'title' => 'Sexdate Duitsland',
+    'info'  => '',
+    'tekst' => '',
+    'img'   => 'duitsland'
+);

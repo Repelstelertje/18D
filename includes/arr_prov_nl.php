@@ -99,3 +99,12 @@ $nl = array(
     ),
 
 );
+
+// Land NL
+$nlLand = array(
+    'name'  => 'Nederland',
+    'title' => 'Sexdate Nederland',
+    'info'  => '',
+    'tekst' => '',
+    'img'   => 'nederland'
+);

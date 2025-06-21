@@ -91,3 +91,12 @@ $be = array(
     ),
 
 );
+
+// Land BE
+$beLand = array(
+    'name'  => 'België',
+    'title' => 'Sexdate België',
+    'info'  => '',
+    'tekst' => '',
+    'img'   => 'belgie'
+);
