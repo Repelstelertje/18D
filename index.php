@@ -29,6 +29,7 @@ $base = __DIR__;
         <a class="btn btn-primary" href="#land-ch">Zwitserland</a>
         </div>
     </div>
+    <div id="top-banner"></div>
     <div class="jumbotron jumbotron-sm text-center" id="land-nl">
         <h2>Nieuwste leden Nederland op zoek naar een sexdate!</h2>
     </div>

@@ -38,7 +38,7 @@ RewriteRule ^sexdate-oostenrijk/?$ land.php?country=at [L,QSA]
 RewriteRule ^sexdate-zwitserland/?$ land.php?country=ch [L,QSA]
 
 # Profile slugs
-RewriteRule ^shemale-([a-z0-9-]+)/?$ profile.php?slug=$1 [L,QSA]
+RewriteRule ^date-([a-z0-9-]+)/?$ profile.php?slug=$1 [L,QSA]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

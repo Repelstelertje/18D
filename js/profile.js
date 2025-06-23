@@ -18,7 +18,7 @@ function slugify(str){
 }
 
 function getSlugFromPath(){
-    var match = window.location.pathname.match(/^\/shemale-([^\/]+)$/);
+    var match = window.location.pathname.match(/^\/date-([^\/]+)$/);
     return match ? match[1] : null;
 }
 
