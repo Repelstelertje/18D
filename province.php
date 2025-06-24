@@ -103,6 +103,10 @@ include $base . '/includes/header.php';
                 echo '<a href="https://oproepjesnederland.nl/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Advertenties ' . $province['name'] . '</a>';
             } elseif ($country === 'be') {
                 echo '<a href="https://zoekertjesbelgie.be/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Zoekertjes ' . $province['name'] . '</a>';
+            } elseif ($country === 'uk') {
+                echo '<a href="https://datingcontact.co.uk/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating ' . $province['name'] . '</a>';
+            } elseif (in_array($country, [ 'de', 'at', 'ch' ], true)) {
+                echo '<a href="https://datingnebenan.de/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating ' . $province['name'] . '</a>';
             }
             $shemaleSlug = ($country === 'be') ? 'shemales-' : 'shemale-';
             ?>
