@@ -104,14 +104,13 @@ include $base . '/includes/header.php';
             } elseif ($country === 'be') {
                 echo '<a href="https://zoekertjesbelgie.be/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Zoekertjes ' . $province['name'] . '</a>';
             } elseif ($country === 'uk') {
-                echo '<a href="https://datingcontact.co.uk/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating ' . $province['name'] . '</a>';
+                echo '<a href="https://datingcontact.co.uk/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Contact ' . $province['name'] . '</a>';
             } elseif (in_array($country, [ 'de', 'at', 'ch' ], true)) {
-                echo '<a href="https://datingnebenan.de/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating ' . $province['name'] . '</a>';
+                echo '<a href="https://datingnebenan.de/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Nebenan ' . $province['name'] . '</a>';
             }
-            $shemaleSlug = ($country === 'be') ? 'shemales-' : 'shemale-';
             ?>
             <a href="https://sex55.net/sexdate-<?php echo $province['img']; ?>" class="btn btn-primary btn-tips" target="_blank">55+ Sexdate <?php echo $province['name']; ?></a>
-            <a href="https://shemaledaten.net/<?php echo $shemaleSlug . $province['img']; ?>" class="btn btn-primary btn-tips" target="_blank">Shemale sexdate <?php echo $province['name']; ?></a>
+            <a href="https://shemaledaten.net/shemale-<?php echo $province['img']; ?>" class="btn btn-primary btn-tips" target="_blank">Shemale sexdate <?php echo $province['name']; ?></a>
         </div>
     </div>
 </div> <!-- container -->
