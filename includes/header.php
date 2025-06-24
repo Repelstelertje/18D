@@ -76,31 +76,31 @@
       switch($item){
         case 'datingtips':
           $canonical = 'https://18date.net/datingtips';
-          $pageTitle = 'Datingtips | 18Date.net';
+          $pageTitle = 'Sexdatingtips | 18Date.net';
           break;
         case 'nl':
           $canonical = 'https://18date.net/datingtips-nederland';
-          $pageTitle = 'Datingtips Nederland | 18Date.net';
+          $pageTitle = 'Sexdatingtips Nederland | 18Date.net';
           break;
         case 'be':
           $canonical = 'https://18date.net/datingtips-belgie';
-          $pageTitle = 'Datingtips België | 18Date.net';
+          $pageTitle = 'Sexdatingtips België | 18Date.net';
           break;
         case 'de':
           $canonical = 'https://18date.net/datingtips-duitsland';
-          $pageTitle = 'Datingtips Duitsland | 18Date.net';
+          $pageTitle = 'Sexdatingtips Duitsland | 18Date.net';
           break;
         case 'uk':
           $canonical = 'https://18date.net/datingtips-verenigd-koninkrijk';
-          $pageTitle = 'Datingtips Verenigd Koninkrijk | 18Date.net';
+          $pageTitle = 'Sexdatingtips Verenigd Koninkrijk | 18Date.net';
           break;
         case 'at':
           $canonical = 'https://18date.net/datingtips-oostenrijk';
-          $pageTitle = 'Datingtips Oostenrijk | 18Date.net';
+          $pageTitle = 'Sexdatingtips Oostenrijk | 18Date.net';
           break;
         case 'ch':
           $canonical = 'https://18date.net/datingtips-zwitserland';
-          $pageTitle = 'Datingtips Zwitserland | 18Date.net';
+          $pageTitle = 'Sexdatingtips Zwitserland | 18Date.net';
           break;
       }
     } else {
