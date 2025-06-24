@@ -1,9 +1,9 @@
 <?php
 $base = __DIR__;
-    define('TITLE', 'Privacybeleid');
-    $canonical = 'https://18date.net/privacy';
-    $pageTitle = 'Privacybeleid | 18Date.net';
-    include $base . '/includes/header.php';
+define('TITLE', 'Privacybeleid');
+$canonical = 'https://18date.net/privacy';
+$pageTitle = 'Privacybeleid | 18Date.net';
+include $base . '/includes/header.php';
 ?>
 <div class="container">
   <div class="jumbotron my-4">
