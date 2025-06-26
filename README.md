@@ -20,3 +20,11 @@ country. Base URLs can be overridden using environment variables:
 
 The entries defined in `includes/array_tips.php` contain HTML fragments. These
 are stored in `$tips["tekst"]` and considered trusted HTML.
+
+### Sitemap generation
+
+Run `php generate_sitemap.php` to regenerate `sitemap.xml`.
+You can automate this by adding a cron task:
+```
+0 2 * * * /usr/bin/php /path/to/18D/generate_sitemap.php > /dev/null 2>&1
+```
