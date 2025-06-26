@@ -99,10 +99,11 @@ include $base . '/includes/header.php';
         </div>
         <div class="jumbotron text-center">
             <?php
+            $cleanSlug = preg_replace('/-(nl|be)$/', '', $province['img']);
             if ($country === 'nl') {
-                echo '<a href="https://oproepjesnederland.nl/dating-' . $province['img'] . '" class="btn btn-primary prov-btn" target="_blank">Dating Advertenties ' . $province['name'] . '</a>';
+                echo '<a href="https://oproepjesnederland.nl/dating-' . $cleanSlug . '" class="btn btn-primary prov-btn" target="_blank">Dating Advertenties ' . $province['name'] . '</a>';
             } elseif ($country === 'be') {
-                echo '<a href="https://zoekertjesbelgie.be/dating-' . $province['img'] . '" class="btn btn-primary prov-btn" target="_blank">Dating Zoekertjes ' . $province['name'] . '</a>';
+                echo '<a href="https://zoekertjesbelgie.be/dating-' . $cleanSlug . '" class="btn btn-primary prov-btn" target="_blank">Dating Zoekertjes ' . $province['name'] . '</a>';
             } elseif ($country === 'uk') {
                 echo '<a href="https://datingcontact.co.uk/dating-' . $province['img'] . '" class="btn btn-primary prov-btn" target="_blank">Dating Contact ' . $province['name'] . '</a>';
             } elseif (in_array($country, [ 'de', 'at', 'ch' ], true)) {
