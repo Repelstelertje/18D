@@ -156,7 +156,7 @@
     }
   } elseif(isset($_GET['slug'])){
     $slugParam = filter_var($_GET['slug'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $canonical = 'https://18date.net/sexdate-' . $slugParam;
+    $canonical = 'https://18date.net/date-' . $slugParam;
     $pageTitle = 'Date ' . $slugParam . ' | 18date.net';
   }
 
