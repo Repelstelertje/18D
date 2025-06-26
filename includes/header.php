@@ -164,6 +164,10 @@
     $pageTitle = 'Date ' . $slugParam . ' | 18date.net';
   }
 
+  // Ensure any ref parameter is stripped from the canonical URL
+  $canonical = preg_replace('/([?&])ref=[^&]*(&|$)/', '$1', $canonical);
+  $canonical = rtrim($canonical, '?&');
+
   echo '<link rel="canonical" href="' . $canonical . '" >';
   echo '<title>' . htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') . '</title>';
   echo '<meta property="og:type" content="website">';
