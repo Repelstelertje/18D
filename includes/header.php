@@ -145,7 +145,11 @@
     }
     if($profile_name){
       $slug = slugify($profile_name);
-      $canonical = 'https://18date.net/date-' . $slug;
+      if($slug){
+        $canonical = 'https://18date.net/date-' . $slug;
+      } else {
+        $canonical = 'https://18date.net/profile?id=' . $id;
+      }
       $pageTitle = 'Date ' . htmlspecialchars($profile_name, ENT_QUOTES, 'UTF-8');
     } else {
       $canonical = 'https://18date.net/profile?id=' . $id;
